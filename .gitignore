@@ -26,3 +26,15 @@ traceback.txt
 files.txt
 
 # End of https://www.toptal.com/developers/gitignore/api/renpy
+
+
+### Code Editor ###
+
+# Visual Studio Code
+.vscode/    
+
+# Visual Studio
+.vs/     
+
+# Pycharm
+.idea/      
