@@ -358,7 +358,6 @@ screen main_menu():
     ## This empty frame darkens the main menu.
     frame:
         style "main_menu_frame"
-
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
     use navigation
@@ -373,6 +372,14 @@ screen main_menu():
 
             text "[config.version]":
                 style "main_menu_version"
+   
+    imagebutton:
+        idle "Other/logo.png"  
+        hover "Other/logo2.png"  
+        action OpenURL("https://itch.io/jam/spooktober-2023")
+        
+        xalign 0  # Center the button horizontally
+        yalign 0  # Adjust the vertical position as needed
 
 
 style main_menu_frame is empty
@@ -530,6 +537,9 @@ style return_button:
     xpos gui.navigation_xpos
     yalign 1.0
     yoffset -45
+
+
+
 
 
 ## About screen ################################################################

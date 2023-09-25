@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("Oops,\nA Cannibal Got Your Nose!")
+define config.name = _("Oops a Cannibal Got Your Nose!")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -26,10 +26,68 @@ define gui.show_name = True
 define config.version = "1.0"
 
 
+
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+Hi!
+
+This game was created as part of the {a=https://itch.io/jam/spooktober-2023 }"Spooktober 5th Annual Visual Novel Jam"{/a}
+
+{a=https://alexp-gaming.itch.io/a-cannibal-got-your-nose}Our itch.io page{/a} 
+
+It's an adventure filled with mystery, comedy, and thrilling twists.
+
+
+Game Credits:
+
+
+- Writers: 
+
+    Alex: {a=https://github.com/AlexP-Coding}AlexP's Github Page{/a}  / {a=https://alexp-gaming.itch.io/}AlexP's ich.io Page{/a}
+
+    David: {a=https://cyberburd.itch.io }Cyberburd's ich.io page{/a} / {a=https://github.com/Cyberburd }Cyberburd's Github Page{/a}
+
+    Inês: Inês link1, Inês link2
+
+
+- Programmers: 
+
+    Alex: {a=https://github.com/AlexP-Coding}AlexP's Github Page{/a}  / {a=https://alexp-gaming.itch.io/}AlexP's ich.io Page{/a}
+
+    David: {a=https://cyberburd.itch.io }Cyberburd's ich.io page{/a} / {a=https://github.com/Cyberburd }Cyberburd's Github Page{/a}
+
+
+- Artist:
+
+    Beatriz: Beatriz link1, Beatriz link2
+
+
+- Images:  
+
+    {a=https://pixabay.com/}pixabay{/a}
+
+    {a=https://www.photofilters.com/}photofilters{/a}   
+
+
+
+- Sound Effects / Music: 
+
+    {a=https://pixabay.com/sound-effects//} pixabay{/a}   
+
+
+
+Special Thanks:
+
+We would like to extend our gratitude to all the participants of the jam for their hard work and dedication in bringing this game to life. 
+
+Additionally, a big thank you to our supporters and players for joining us on this spooky journey.
+
+We hope you enjoyed playing. 
+
+Happy gaming!
+
 """)
 
 
@@ -37,7 +95,7 @@ define gui.about = _p("""
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "ACannibalGotYourNose"
+define build.name = "OopsaCannibalGotYourNose!"
 
 
 ## Sounds and music ############################################################
@@ -62,7 +120,7 @@ define config.has_voice = True
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
+define config.main_menu_music = "intro.mp3"
 
 
 ## Transitions #################################################################
@@ -73,23 +131,23 @@ define config.has_voice = True
 
 ## Entering or exiting the game menu.
 
-define config.enter_transition = dissolve
-define config.exit_transition = dissolve
+define config.enter_transition = fade
+define config.exit_transition = fade
 
 
 ## Between screens of the game menu.
 
-define config.intra_transition = dissolve
+define config.intra_transition = fade
 
 
 ## A transition that is used after a game has been loaded.
 
-define config.after_load_transition = None
+define config.after_load_transition = fade
 
 
 ## Used when entering the main menu after the game has ended.
 
-define config.end_game_transition = None
+define config.end_game_transition = fade
 
 
 ## A variable to set the transition used when the game starts does not exist.
@@ -143,7 +201,7 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "OopsTheCannibalGotMyNose-1693476061"
+define config.save_directory = "OopsaCannibalGotYourNose-1694013574"
 
 
 ## Icon ########################################################################
