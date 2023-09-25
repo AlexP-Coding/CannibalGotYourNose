@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("Oops a Cannibal Got Your Nose!")
+define config.name = _("Oops, a Cannibal Got Your Nose!")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -120,7 +120,7 @@ define config.has_voice = True
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-define config.main_menu_music = "intro.mp3"
+define config.main_menu_music = "music/intro.mp3"
 
 
 ## Transitions #################################################################
