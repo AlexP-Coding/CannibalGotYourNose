@@ -1,16 +1,24 @@
 # Script for "Oops a Cannibal Got Your Nose!"
 
-# Characters used in this game
-define a = Character("Ridley")
-define b = Character("Ash")
-define c = Character("Father")
-define d = Character("Mother")
+# Colors
+define mcColor = "#10c05a"
+define cannibalColor = "#da28ad"
+define trueCannibalColor = "#fb0064"
+define bgCharColor = "#1d53a5"
 
-define e = Character("Hotdog lover")
-define f = Character("Train Conductor")
-define g = Character("Detective")
-define h = Character("Duck Man")
-define i = Character("Hunter")
+# Characters used in this game
+define narrator = Character(what_italic=True)
+define charMC = Character("You", color=mcColor)
+define charNotYetCan = Character("Ash", color=cannibalColor)
+define charCan = Character("Ash, the Cannibal", color=trueCannibalColor)
+define charDad = Character("Dad", color=bgCharColor)
+define charMom = Character("Mom", color=bgCharColor)
+
+define charHDg = Character("Hotdog lover", color=bgCharColor)
+define charTrn = Character("Train Conductor", color=bgCharColor)
+define charDtv = Character("Detective", color=bgCharColor)
+define charDck = Character("Duck Man", color=bgCharColor)
+define charHnt = Character("Hunter", color=bgCharColor)
 
 #-----------------------------------------------------------------------------------
 # Initialize a counter variable for scenarios
@@ -44,16 +52,16 @@ label start:
     play sound "sfx/phone.mp3"
     "Then, your phone started ringing."
 
-    b "Hey, Ridley! Wanna hang out?" 
+    charNotYetCan "Hey, Ridley! Wanna hang out?" 
     play sound "sfx/birds.mp3"
-    a "Sure, where to?" 
-    b "A camp. Say bye to your parents and make sure to leave your will!" 
-    a "Wait? What do you--"
+    charMC "Sure, where to?" 
+    charNotYetCan "A camp. Say bye to your parents and make sure to leave your will!" 
+    charMC "Wait? What do you--"
     play sound "sfx/hang-up.mp3"
 
 
     "Oh. He already hang up the call..." 
-    a "He can be that weird, sometimes." 
+    charMC "He can be that weird, sometimes." 
     play sound "sfx/birds.mp3"
 
     "While packing stuff for later, you noticed your parents standing by the door."
@@ -61,15 +69,15 @@ label start:
     show mother with dissolve
     show father at right with dissolve
 
-    c "Hey, are you going somewhere?" 
+    charDad "Hey, are you going somewhere?" 
     # Character sprite
     show ridley at left with dissolve
-    a "Camping." 
+    charMC "Camping." 
     "You answered while shrugging"
-    d "Okay, just be sure to have your phone with you at all times." 
-    a "Sure!"
-    c "Don't forget that we won't be here for the weekend."
-    a "Yeah. I'll take care of the house, don't worry."
+    charMom "Okay, just be sure to have your phone with you at all times." 
+    charMC "Sure!"
+    charDad "Don't forget that we won't be here for the weekend."
+    charMC "Yeah. I'll take care of the house, don't worry."
 
     hide father with fade
     hide mother with fade
@@ -93,36 +101,36 @@ label start:
     scene street2 with fade
     play music "music/notScary.mp3"
     "As you do so, suddenly, you feel a hand on your shoulder..."
-    b "It's chomping time!" 
+    charNotYetCan "It's chomping time!" 
     "A voice exclaims."
     play music "music/happy.mp3"
     "You quickly turn around to see your silly friend laughing at you."
     show ridley at left with dissolve
     "You realize it was your friend, Ash..."
-    a "This is why you don’t have many friends." 
+    charMC "This is why you don’t have many friends." 
     show ash with dissolve
-    b "Right, because of that…" 
+    charNotYetCan "Right, because of that…" 
     "Ash says with a remorseful face."
-    a "Say, do you know what all that is about?" 
+    charMC "Say, do you know what all that is about?" 
     "You point at all the commotion happening close to your friend's home."
-    b "Some idiot pretending to be a vampire or whatever." 
-    b "It's cool now."
-    b "I think..."
-    a "You think?!"
-    b "Yeah, don't even worry about it."
-    a "..."
-    b "Anyway."
-    b "We can’t go eat at our restaurant for some time, though."
-    a "That’s weird." 
-    a "Did anything bad happen there?"
+    charNotYetCan "Some idiot pretending to be a vampire or whatever." 
+    charNotYetCan "It's cool now."
+    charNotYetCan "I think..."
+    charMC "You think?!"
+    charNotYetCan "Yeah, don't even worry about it."
+    charMC "..."
+    charNotYetCan "Anyway."
+    charNotYetCan "We can’t go eat at our restaurant for some time, though."
+    charMC "That’s weird." 
+    charMC "Did anything bad happen there?"
     play music "music/oof.mp3" 
-    b "I don’t know..." 
-    b "But, speaking of eating, let's grab something to eat in that other restaurant."
-    b "I could eat a whole cow right about now." 
+    charNotYetCan "I don’t know..." 
+    charNotYetCan "But, speaking of eating, let's grab something to eat in that other restaurant."
+    charNotYetCan "I could eat a whole cow right about now." 
     play music "music/happy.mp3"
     "You look at your wristwatch and realize why Ash was starving."
-    a  "Sure…" 
-    a "Let's go, then."
+    charMC "Sure…" 
+    charMC "Let's go, then."
     scene street3 with fade
     hide ash with dissolve
     hide ridley with dissolve
@@ -131,20 +139,20 @@ label start:
     "Minutes later, Ash remembered something crucial."
     scene restaurant1 with fade
     show ash with dissolve
-    b "Oh!"
+    charNotYetCan "Oh!"
     show ridley at left with dissolve
-    a "What?"
-    b "I forgot to pack some condiments for dinner!" 
-    b "You know I can't live without peppering my food before eating it."
-    b "...especially campfire-cooked food."
+    charMC "What?"
+    charNotYetCan "I forgot to pack some condiments for dinner!" 
+    charNotYetCan "You know I can't live without peppering my food before eating it."
+    charNotYetCan "...especially campfire-cooked food."
     "Ash confesses, kneeling on the ground."
-    a "You always like to overreact."
-    a  "Can't you just bear with it for today?" 
-    b "I can but..."
-    b "Don't be surprised if I feel like running around in search of deliciously seasoned meat." 
+    charMC "You always like to overreact."
+    charMC "Can't you just bear with it for today?" 
+    charNotYetCan "I can but..."
+    charNotYetCan "Don't be surprised if I feel like running around in search of deliciously seasoned meat." 
     "You throw an annoyed look at Ash."
-    a "Well, enough chatting." 
-    a "Let's just go inside this place." 
+    charMC "Well, enough chatting." 
+    charMC "Let's just go inside this place." 
     "You reach to the restaurant's door handle and open the door."
 
     scene restaurant2 with fade
@@ -154,18 +162,18 @@ label start:
     "While wating for the bill, Ash decided to go to the bathroom and stayed there for a while."
     "He did reappear after and even helped in paying the bill."
     "It did leave you confused as to what he was doing in there for so long..."
-    a "Are you ok, buddy?"
+    charMC "Are you ok, buddy?"
     "You ask Ash when you see an expression on his face that left you curious."
-    b "Yeah. Never. Been. Better."
-    a "If you say so."
-    b "Do you have all the stuff for our dinner at the campsite?"
-    a "Food related? Yes."
-    b "What about knifes and pots?"
-    a "Nope..."
-    b "..."
-    a "..."
-    b "Well, maybe we should buy that in our way there."
-    a "Sounds like a plan."
+    charNotYetCan "Yeah. Never. Been. Better."
+    charMC "If you say so."
+    charNotYetCan "Do you have all the stuff for our dinner at the campsite?"
+    charMC "Food related? Yes."
+    charNotYetCan "What about knifes and pots?"
+    charMC "Nope..."
+    charNotYetCan "..."
+    charMC "..."
+    charNotYetCan "Well, maybe we should buy that in our way there."
+    charMC "Sounds like a plan."
     play sound "sfx/footsteps.mp3"
     "You, accompanied by Ash, leave the restaurant to head for the nearest warehouse store."
 
@@ -174,10 +182,10 @@ label start:
     "With minimal hassle, both arrived at the store to purchase the necessary items." 
     play sound "sfx/radio.mp3"
     "All the while a disturbing bathroom murder was being reported on the radio..."
-    a "What's this all about?"
-    b "Don't know, don't care."
-    b "Hey! Look at how sharp that knife is!"
-    a "..."
+    charMC "What's this all about?"
+    charNotYetCan "Don't know, don't care."
+    charNotYetCan "Hey! Look at how sharp that knife is!"
+    charMC "..."
     "After a while, you got everything that was needed for later."
 
     scene street4 with fade
@@ -193,11 +201,11 @@ label start:
     "An hour later, the taxi arrived at the campsite."
     show ash with dissolve
     "Ash gets out of the taxi and while you payed for the fare, he begins looking around at the place."
-    b "That place looks good."
-    b "Let's stay there."
+    charNotYetCan "That place looks good."
+    charNotYetCan "Let's stay there."
     "Ash said, as he pointed to an isolated part of the campsite."
     show ridley at left with dissolve
-    a "Sure."
+    charMC "Sure."
     "With not much choice on the matter." 
     "You agree on also staying in that place for the evening."
     # This ends the introduction.
@@ -221,9 +229,9 @@ label d1:
     "You look away for a second, and then..." 
     play music "music/oof.mp3"
     "You witness Ash devouring all the meat that was in the pot."
-    b "Not enough..."
-    b " s t i l l" 
-    b "h u n g r y"
+    charNotYetCan "Not enough..."
+    charNotYetCan " s t i l l" 
+    charCan "h u n g r y"
     "Still hungry, he reaches out towards you, attempting to take a bite out of your nose."
     "You attempt to make a run for it, but unfortunately, he manages to grab onto your leg."
 
@@ -293,10 +301,10 @@ label d2:
         "Panically toss the hotdog in the direction where your friend was.":
             "However, before doing so, you notice your friend doing something out of character."
             show ash with dissolve
-            b "So sorry for this."
-            b "Please don’t be mean to my clumsy friend."
-            e "Don’t worry, I don’t mind it that much."
-            a "What?"
+            charCan "So sorry for this."
+            charCan "Please don’t be mean to my clumsy friend."
+            charHDg "Don’t worry, I don’t mind it that much."
+            charMC "What?"
             "You said as you blankly stared at your friend who was now assisting the person you just bumped into."
             play sound "sfx/limb-lost.mp3"
             scene limb-lost with fade
@@ -317,14 +325,14 @@ label d2:
 
         # Choice 2:
         "Quickly apologize to the person.":
-            a "Sorry, my bad."
+            charMC "Sorry, my bad."
             "After that, you glance back to see your friend devouring the hotdog that had fallen to the ground." 
             play sound "sfx/eat.mp3"
             show ash with dissolve
             "You realize that he also has a grip on your arm."
             play music "music/oof2.mp3"
             "So you decide to trick him."
-            a "If you want more of those hotdogs, I know just the place where they are. Just let me go and grab them."
+            charMC "If you want more of those hotdogs, I know just the place where they are. Just let me go and grab them."
             "You said, in hopes of tricking him."
             "Your friend falls for it." 
             hide ash with dissolve
@@ -333,10 +341,10 @@ label d2:
             play sound "sfx/falling.mp3"
             scene stand with fade
             "You jump on it, attempting to drive it like a racing car, resulting in all the hotdogs spilling out from behind the hotdog stand, causing your friend to chase you." 
-            b "Come back here!"
+            charCan "Come back here!"
             show ash with dissolve
             play sound "sfx/rolling.mp3"
-            b "All these hotdogs are not as good as your flesh!"
+            charCan "All these hotdogs are not as good as your flesh!"
             "A few minutes later, you jump out of the hotdog stand."
             play sound "sfx/falling-ground.mp3"
             "As you safely land on top of a shrub of plants, you see your friend still chasing the hotdog stand."
@@ -365,27 +373,27 @@ label d3:
     show ash at left with dissolve
 
     "Maybe it's over." 
-    a "How big can his stomach be?"
+    charMC "How big can his stomach be?"
     "You wonder how he can keep running after you with all that food in his body." 
-    a "Why does he want your meat? There's so many people around…" 
-    a "Why can’t he pick one of them?" 
-    a "What’s so tasty about me?"
+    charMC "Why does he want your meat? There's so many people around…" 
+    charMC "Why can’t he pick one of them?" 
+    charMC "What’s so tasty about me?"
     
     play music "music/oof2.mp3"
     "Before you know it, he taps you on the shoulder."
-    b "Look, as much as I’m enjoying my workout, I kinda really need to eat you."
-    a "..."
-    b "Hey, I don't wanna sound thankless." 
-    b "I mean, look at these calves." 
+    charCan "Look, as much as I’m enjoying my workout, I kinda really need to eat you."
+    charMC "..."
+    charCan "Hey, I don't wanna sound thankless." 
+    charCan "I mean, look at these calves." 
 
-    b "So sexy..."
-    a "Are you... making out with your calves?"
-    b "*coughs*" 
-    b "Anyway, what was I saying?"
-    b "These days my memory seems to get enthralled by my…beautiful calv-"
-    b "FOCUS!" 
-    b "Now." 
-    b "Remind me what I was telling you?"
+    charCan "So sexy..."
+    charMC "Are you... making out with your calves?"
+    charCan "*coughs*" 
+    charCan "Anyway, what was I saying?"
+    charCan "These days my memory seems to get enthralled by my…beautiful calv-"
+    charCan "FOCUS!" 
+    charCan "Now." 
+    charCan "Remind me what I was telling you?"
 
     play music "music/quick.mp3"
     menu:
@@ -394,17 +402,17 @@ label d3:
         # Choice 1:
         "Divert the focus to another person":
             if limbs == 5:
-                a "Oh right! You were telling me about how much you want to eat that man over there."
-                a "Doesn't he look yummy?"
-                b "Are you sure?" 
-                b "Because it would make more sense if I wanted to eat you."
-                b "Since I’m chasing you and all."
-                a "Uh. LOOK! CALVES!"
-                b "YES! CALVES." 
-                b "Such nice ones you have, Ridley!"
-                b "Yummers."
-                a "Wait, no!"
-                a "Stop!!!"
+                charMC "Oh right! You were telling me about how much you want to eat that man over there."
+                charMC "Doesn't he look yummy?"
+                charCan "Are you sure?" 
+                charCan "Because it would make more sense if I wanted to eat you."
+                charCan "Since I’m chasing you and all."
+                charMC "Uh. LOOK! CALVES!"
+                charCan "YES! CALVES." 
+                charCan "Such nice ones you have, Ridley!"
+                charCan "Yummers."
+                charMC "Wait, no!"
+                charMC "Stop!!!"
 
                 play sound "sfx/limb-lost.mp3"
                 scene limb-lost with fade
@@ -419,7 +427,7 @@ label d3:
                 
                 "[remaining_limbs_text]"
 
-                b "Might as well move, old friend. You’ll take some time to digest."
+                charCan "Might as well move, old friend. You’ll take some time to digest."
                 "You somehow ran away..."   
                 # Check if the character has no more limbs before going to the badEnd
                 if limbs <= 0:
@@ -428,19 +436,19 @@ label d3:
                     jump t1
 
             else:
-                a "Oh right! You were telling me about how much you want to eat that man over there."
-                a "Doesn't he look yummy?"
-                b "Are you sure?" 
-                b "Because it would make more sense if I wanted to eat you."
-                b "Since I’m chasing you and all."
-                a "Uh. LOOK! CALVES!"
+                charMC "Oh right! You were telling me about how much you want to eat that man over there."
+                charMC "Doesn't he look yummy?"
+                charCan "Are you sure?" 
+                charCan "Because it would make more sense if I wanted to eat you."
+                charCan "Since I’m chasing you and all."
+                charMC "Uh. LOOK! CALVES!"
                 "You notice as your friend spots the man you were referring to."
-                b "Well, I guess if I’ve already eaten yours." 
-                b "You won’t get jealous will you?"
+                charCan "Well, I guess if I’ve already eaten yours." 
+                charCan "You won’t get jealous will you?"
                 "You shake your head in response."
-                b "Good. Stay here."
+                charCan "Good. Stay here."
                 hide ash with dissolve
-                a "..."
+                charMC "..."
                 "You, in fact, did not stay there." 
                 "You hopped away as fast as you could."
                 "You run away!"
@@ -463,26 +471,26 @@ label d3:
         # Choice 2: 
         "Divert the focus onto something else":
             play music "music/mystery2.mp3"
-            a "Oh right! I shared the story of how much we loved collecting random bones we found when we were little!"
-            a "Remember?"
-            b "Not really..."
-            a "Of course you don't, you silly head!" 
-            a "You used to eat them all." 
-            a "Ahh, things normal children do."
-            b "Uhh. If you say so."
-            a "And you told me you kept one of the bones." 
-            a "To remind you of the old times."
-            b "That doesn't sound like me."
-            a "Shhhh." 
-            a "Right now you were about to return to the camp to get it for me."
-            a "I told ya that if you did that for me, I would stop running and let you eat me." 
-            a "Because we must trust in the power of friendship to keep us together." 
-            a "And what better way than from inside you!"
-            b "Do you mean that?"
-            a "Of course, bestie!"
-            b "Ok, stay here." 
-            b "I’ll go get you that bone." 
-            b "Just gotta remember where I put it."
+            charMC "Oh right! I shared the story of how much we loved collecting random bones we found when we were little!"
+            charMC "Remember?"
+            charCan "Not really..."
+            charMC "Of course you don't, you silly head!" 
+            charMC "You used to eat them all." 
+            charMC "Ahh, things normal children do."
+            charCan "Uhh. If you say so."
+            charMC "And you told me you kept one of the bones." 
+            charMC "To remind you of the old times."
+            charCan "That doesn't sound like me."
+            charMC "Shhhh." 
+            charMC "Right now you were about to return to the camp to get it for me."
+            charMC "I told ya that if you did that for me, I would stop running and let you eat me." 
+            charMC "Because we must trust in the power of friendship to keep us together." 
+            charMC "And what better way than from inside you!"
+            charCan "Do you mean that?"
+            charMC "Of course, bestie!"
+            charCan "Ok, stay here." 
+            charCan "I’ll go get you that bone." 
+            charCan "Just gotta remember where I put it."
             hide ash with dissolve
             "Your friend leaves."
             "You successfully trick Ash."
@@ -514,13 +522,13 @@ label d4:
     show ridley with dissolve
     show ash at left with dissolve
     "After running for your dear life, Ash still manages to stay close to you."
-    a "Well, maybe If I had all limbs I could outrun you."
-    a "...sad that it was my favorite limb that was taken off..." 
-    a "At the very least, was it tasty?"
-    b " v e r y" 
-    b "t a s t y"
-    a "Oh welp."
-    a "If one of us is happy..."
+    charMC "Well, maybe If I had all limbs I could outrun you."
+    charMC "...sad that it was my favorite limb that was taken off..." 
+    charMC "At the very least, was it tasty?"
+    charCan " v e r y" 
+    charCan "t a s t y"
+    charMC "Oh welp."
+    charMC "If one of us is happy..."
 
     play music "music/quick.mp3"
     menu:
@@ -531,9 +539,9 @@ label d4:
             # * points *
             if limbs >= 4:
                 scene street6 with fade
-                a "OH MY GOD, is that Annabelle Hektor?!"
+                charMC "OH MY GOD, is that Annabelle Hektor?!"
                 play sound "sfx/wind.mp3"
-                b "Where??"
+                charCan "Where??"
                 "You distracted Ash."
                 hide ash with dissolve
                 play sound "sfx/running.mp3"
@@ -554,14 +562,14 @@ label d4:
             elif limbs == 3:
                 scene street6 with fade
                 "Unfortunately, it is very hard to point at something with no arms."
-                b "Oh? "
-                a "It’s..."
-                a "It’s your twin sister!"
+                charCan "Oh? "
+                charMC "It’s..."
+                charMC "It’s your twin sister!"
                 play sound "sfx/laugh.mp3"
-                b "Nice try."
+                charCan "Nice try."
                 play sound "sfx/wind.mp3"
-                b "I ate her in the womb."
-                a "..."
+                charCan "I ate her in the womb."
+                charMC "..."
                 hide ash with dissolve
                 play sound "sfx/limb-lost.mp3"
                 scene limb-lost with fade
@@ -576,7 +584,7 @@ label d4:
                 
                 "[remaining_limbs_text]"
 
-                b "Might as well move, old friend. You’ll take some time to digest."
+                charCan "Might as well move, old friend. You’ll take some time to digest."
                 "You somehow ran away..."   
                 # Check if the character has no more limbs before going to the badEnd
                 if limbs <= 0:
@@ -592,7 +600,7 @@ label d4:
                 "It strikes true!"
                 play sound "sfx/bone.mp3"
                 "You no longer have to worry about little baby cannibals running around."
-                a "You deserved it!"
+                charMC "You deserved it!"
 
                 "You should probably worry about getting away, though."
                 hide ash with dissolve
@@ -615,7 +623,7 @@ label d4:
             elif limbs == 1:
                 "You wobble around on your legless torso and manage to hop all the way up!"
                 scene street8 with fade
-                b "I’ve seen mightier penguins."
+                charCan "I’ve seen mightier penguins."
                 play sound "sfx/limb-lost.mp3"
                 scene limb-lost with fade
                 "Your friend takes this opportunity to get a body part of yours."
@@ -629,7 +637,7 @@ label d4:
                 
                 "[remaining_limbs_text]"
 
-                b "Might as well move, old friend. You’ll take some time to digest."
+                charCan "Might as well move, old friend. You’ll take some time to digest."
                 hide ash with dissolve
                 play sound "sfx/running.mp3"
                 "You somehow ran away."
@@ -675,15 +683,15 @@ label t1:
 
                 show conductor with dissolve
                 "You realize it’s the train conductor who was doing his job of searching for anybody with no train ticket."
-                a "I’m sorry but a lot has happened so I don’t have the money to get a ticket..."
-                f "Not an excuse!"
-                a "But-"
+                charMC "I’m sorry but a lot has happened so I don’t have the money to get a ticket..."
+                charTrn "Not an excuse!"
+                charMC "But-"
                 "You give up on explaining your bizarre situation to the train conductor so he decides on escorting you off the train."
                 "Glancing back, you see your cannibal friend ready to hunt you down."
                 show ash at right with dissolve
-                b "Forgot something?" 
+                charCan "Forgot something?" 
                 "Your friend shows you your wallet."
-                b "You have nowhere else to run off to!"
+                charCan "You have nowhere else to run off to!"
                 play sound "sfx/running.mp3"
                 "In a split second, perhaps due to desperation, you push the train conductor, who was standing next to you, with all your might in your friend’s direction."
                 "Your friend gets distracted." 
@@ -713,9 +721,9 @@ label t1:
                 "Afterwards, you get inside the train and show it to the train conductor."
                 play sound "sfx/train.mp3"
                 show conductor with dissolve
-                f "Thanks."
-                f "Have a safe journey."
-                a "Thanks."
+                charTrn "Thanks."
+                charTrn "Have a safe journey."
+                charMC "Thanks."
                 "You watch the train conductor leave the carriage and you look around to see who was left."
                 hide conductor with dissolve
                 "You spot only a few other passengers, which makes you feel safe."
@@ -726,14 +734,14 @@ label t1:
                 "You wake up to a terrible scene that left you shocked."
                 "Trying to stand up from the ground, you check your whole body for any injuries." 
                 "Thankfully, you were fine but soon realized something frightful."
-                a "I gotta get out of here." 
-                a "This train accident may not have been a regular accident after all."
-                b "Well, well..." 
-                b "Someone’s using their brain. I’m proud of you."
+                charMC "I gotta get out of here." 
+                charMC "This train accident may not have been a regular accident after all."
+                charCan "Well, well..." 
+                charCan "Someone’s using their brain. I’m proud of you."
                 "You look up to see where the voice was coming from." 
                 show ash at right with dissolve
                 "You realize it was your friend and he was already grabbing you."
-                b "You really tried running away from me?"
+                charCan "You really tried running away from me?"
 
                 "Your friend gets a body part of yours."
                 hide ridley with dissolve
@@ -779,22 +787,22 @@ label t1:
                 "She proceeds to bandage you properly."
                 "Surprisingly, she seems understanding—perhaps too understanding— so you decide to test her."
                 "You ask."
-                a "Could you lend me your phone for a minute?"
-                g "Sure. Let me just call someone first."
+                charMC "Could you lend me your phone for a minute?"
+                charDtv "Sure. Let me just call someone first."
                 play sound "sfx/hang-up.mp3"
                 "She makes her call and when placing her phone in my hand, the lights on the train go out."
                 scene lightout with fade
                 play music "music/oof.mp3"
                 hide detective with dissolve
                 hide ridley with dissolve
-                a "What’s going on?"
-                g "Nothing you should worry about. Just remain there for a while."
+                charMC "What’s going on?"
+                charDtv "Nothing you should worry about. Just remain there for a while."
                 "Trying not to give in to the dark, a few minutes later, you start listening to some footsteps."
-                g "Took you long enough."
+                charDtv "Took you long enough."
                 "Someone gets closer to you and says."
                 "Sorry, some other stuff happened."
                 "You recognized that voice from the same person who you were running away from."
-                a "That voice. How did you get in here?"
+                charMC "That voice. How did you get in here?"
                 "Your question is left unanswered as you suddenly feel someone grabbing you."
                 play sound "sfx/limb-lost.mp3"
                 scene limb-lost2 with fade
@@ -821,24 +829,24 @@ label t1:
             # Choice 2:
             "Claim that you recently suffered an accident and return to resting." :
                 "She wakes you up again as the train starts moving."
-                g "So, where are you  going at this time?"
+                charDtv "So, where are you  going at this time?"
                 "You begin feeling suspicious about her."
-                a "To see my family."
-                g "Ok."
+                charMC "To see my family."
+                charDtv "Ok."
                 scene lightout with fade
                 play music "music/oof.mp3"
                 "The detective decides to make a call and minutes later, the train's lights go out."
                 hide detective with dissolve
                 hide ridley with dissolve
                 "Instead of sitting, you decide to press the emergency button to safely exit the train."
-                g "Stay still." 
-                g "Wouldn’t want you to get injured in any way."
+                charDtv "Stay still." 
+                charDtv "Wouldn’t want you to get injured in any way."
                 play sound "sfx/train.mp3"
                 "After saying this, she tries to grab you, but you dodge, leading her out through the open train doors, resulting in her death."
                 "You hear fast footsteps approaching from the next train carriage so, in a split second, you decide to leave the train."
                 play sound "sfx/train.mp3"
                 "The train was still moving but you gathered courage."
-                a "C’mon! I can make this."
+                charMC "C’mon! I can make this."
                 "You jump out of the moving train, landing safely in a shrub of land."
                 show ridley at left with dissolve
                 scene train2 with fade
@@ -880,11 +888,11 @@ label t2:
 
     "Oh, this one will be easy."
     "You think."
-    a "Excuse me, sir!"
-    h "Ugh. Can’t you see I’m busy." 
-    a "It’s just..." 
-    a "I’m lost!"
-    h "Fuck off!"
+    charMC "Excuse me, sir!"
+    charDck "Ugh. Can’t you see I’m busy." 
+    charMC "It’s just..." 
+    charMC "I’m lost!"
+    charDck "Fuck off!"
 
     play music "music/quick.mp3"
     menu:
@@ -893,20 +901,20 @@ label t2:
         # Choice a:
         "Scare him and make him head towards the cannibal.":
             if limbs == 5:
-                a "I heard there are dangerous... animals around." 
-                a "I’ve been hearing crunching noises all the way here." 
-                a "Please show me the way out." 
-                a "You should leave too."
-                h "Yeah right." 
-                h "Just what I needed tonight..." 
-                h "Another drug addict..." 
-                h "I know how to deal with the likes of you."
+                charMC "I heard there are dangerous... animals around." 
+                charMC "I’ve been hearing crunching noises all the way here." 
+                charMC "Please show me the way out." 
+                charMC "You should leave too."
+                charDck "Yeah right." 
+                charDck "Just what I needed tonight..." 
+                charDck "Another drug addict..." 
+                charDck "I know how to deal with the likes of you."
                 "He unsheathes a rubber chicken knife that, although ridiculous, looks very deadly."
                 play sound "sfx/quack.mp3"
-                a "Uh? What...?"
+                charMC "Uh? What...?"
                 play music "music/notScary.mp3"
                 "He starts chasing you with his rubber chicken knife!"
-                a "AHHH!"
+                charMC "AHHH!"
                 "You go back where you came from." 
                 play sound "sfx/running.mp3"
                 "When spotting your friend, the cannibal, you trip!" 
@@ -925,17 +933,17 @@ label t2:
 
             else:
                 # Missing any limb
-                a "I heard there are dangerous...animals around." 
-                a "I’ve been hearing crunching noises all the way here." 
-                a "Please show me the way out." 
-                a "You should leave too."
-                h "Yeah right." 
-                h "Just what I needed tonight... "
-                h "Another drug addict..."
-                h "I know how to deal with the likes of you."
+                charMC "I heard there are dangerous...animals around." 
+                charMC "I’ve been hearing crunching noises all the way here." 
+                charMC "Please show me the way out." 
+                charMC "You should leave too."
+                charDck "Yeah right." 
+                charDck "Just what I needed tonight... "
+                charDck "Another drug addict..."
+                charDck "I know how to deal with the likes of you."
                 "He unsheathes a rubber chicken knife that, although ridiculous, looks very deadly!"
                 play sound "sfx/quack.mp3"
-                a "Uh? What...?"
+                charMC "Uh? What...?"
                 play music "music/notScary.mp3"
                 "You attempt to run!" 
                 "But, due to your lack of limbs, you can only hop slowly." 
@@ -961,22 +969,22 @@ label t2:
         # Choice b:
         "Be weird.":
             play music "music/mystery.mp3"
-            a "You see, the gods stopped answering my calls." 
-            a "I feel so lost... without them."
-            h "Uh? Did you escape some hospital or something?"
+            charMC "You see, the gods stopped answering my calls." 
+            charMC "I feel so lost... without them."
+            charDck "Uh? Did you escape some hospital or something?"
             "You start screaming incoherently as if performing a ritual but with made-up words."
             "Duck Man, now being scared by you says."
-            h "Hey! Get away from me!" 
-            h "Shoo!"
+            charDck "Hey! Get away from me!" 
+            charDck "Shoo!"
             "He starts throwing rocks at you." 
             "Although you pretend not to notice, the stones do hurt." 
             "Especially your feelings."
-            a "I’ve sacrificed so much, so many things, so many people..." 
-            a "Maybe you will get the gods to listen to me."
+            charMC "I’ve sacrificed so much, so many things, so many people..." 
+            charMC "Maybe you will get the gods to listen to me."
             "Duck Man, trapped between you and the pond, faints dramatically." 
             hide duck-man with dissolve
             "You prepare the Duck Man to make him more appealing to your dear cannibal friend."
-            a "Can’t believe that worked!"
+            charMC "Can’t believe that worked!"
             python:
                 # increase the number of sacrifices by 1
                 sacrifices += 1 
@@ -989,16 +997,16 @@ label t2:
 
         # Choice c:
         "Talk about the ducks.":
-            a "Why are you throwing rocks at those ducks?"
-            h "Look, what do you want?" 
-            h "Leave! It’s none of your business."
-            a "C'mon what did they even do?"
+            charMC "Why are you throwing rocks at those ducks?"
+            charDck "Look, what do you want?" 
+            charDck "Leave! It’s none of your business."
+            charMC "C'mon what did they even do?"
             "He appears to get angry at me and starts yelling."
-            h "These stupid ducks deserve this!" 
-            h "They killed my grandma!"
+            charDck "These stupid ducks deserve this!" 
+            charDck "They killed my grandma!"
             "While the Duck Man’s back is turned towards them, the very wholesome ducks begin gathering right behind him."
             play sound "sfx/quack.mp3"
-            h "Wha- AAHHHHHHH!"
+            charDck "Wha- AAHHHHHHH!"
             play music "music/oof.mp3"
             scene ducks with fade
             "The Duck Man is pulled into the lake and every last bit of his flesh is devoured by the previous wholesome ducks."
@@ -1025,13 +1033,13 @@ label t2:
         # Choice d:
         "Drop a tree on him ":
             if limbs == 5 and saw == true:
-                a "Oh, I was lost in the lyrics of a song." 
-                a "A song that I was singing in my head."
-                h "Are you serious? Just leave!"
-                a "Fine, fine." 
-                a "Just, stay here."
-                a "In that exact position you are in right now."
-                h "Weirdo..."
+                charMC "Oh, I was lost in the lyrics of a song." 
+                charMC "A song that I was singing in my head."
+                charDck "Are you serious? Just leave!"
+                charMC "Fine, fine." 
+                charMC "Just, stay here."
+                charMC "In that exact position you are in right now."
+                charDck "Weirdo..."
                 play sound "sfx/footsteps.mp3"
                 scene tree with fade
                 "You pretend to leave the vicinity, but manage to hide behind a large tree."
@@ -1053,13 +1061,13 @@ label t2:
                 "[sacrifices_text]"
 
             if limbs == 5 and saw == false:
-                a "Oh, I was lost in the lyrics of a song." 
-                a "A song that I was singing in my head."
-                h "Are you serious? Just leave!"
-                a "Fine, fine." 
-                a "Just, stay here."
-                a "In that exact position you are in right now."
-                h "Weirdo..."
+                charMC "Oh, I was lost in the lyrics of a song." 
+                charMC "A song that I was singing in my head."
+                charDck "Are you serious? Just leave!"
+                charMC "Fine, fine." 
+                charMC "Just, stay here."
+                charMC "In that exact position you are in right now."
+                charDck "Weirdo..."
                 play sound "sfx/footsteps.mp3"
                 scene tree with fade
                 "You pretend to leave the vicinity, but manage to hide behind a large tree."
@@ -1089,13 +1097,13 @@ label t2:
                 "You somehow ran away."
 
             if limbs <= 4:
-                a "Oh, I was lost in the lyrics of a song." 
-                a "A song that I was singing in my head."
-                h "Are you serious? Just leave!"
-                a "Fine, fine." 
-                a "Just, stay here."
-                a "In that exact position you are in right now."
-                h "Weirdo..."
+                charMC "Oh, I was lost in the lyrics of a song." 
+                charMC "A song that I was singing in my head."
+                charDck "Are you serious? Just leave!"
+                charMC "Fine, fine." 
+                charMC "Just, stay here."
+                charMC "In that exact position you are in right now."
+                charDck "Weirdo..."
                 play sound "sfx/footsteps.mp3"
                 scene tree with fade
                 "You pretend to leave the vicinity, but manage to hide behind a large tree."
@@ -1131,11 +1139,11 @@ label t3:
 
     "After a whole lotta sprinting, you find a hunter stuck in a bear trap."
     show hunter at right with dissolve
-    i "Oh, thank goodness..."
-    i "Please help me!"
+    charHnt "Oh, thank goodness..."
+    charHnt "Please help me!"
     "Ash must be close behind you!" 
     "There’s no way you’ll outrun him if he finds you."
-    a "..."
+    charMC "..."
     "But maybe if someone else takes the fall..."
 
     play music "music/quick.mp3"
@@ -1146,13 +1154,13 @@ label t3:
         "Pretend to be deaf." :
             "You ignore the man and hide yourself behind a convenient tree."
             scene tree with fade
-            i "Hello?"
+            charHnt "Hello?"
             "The hunter was still trying to reach you but you decide to still ignore him."
-            i "HELLO! CAN YOU HEAR ME??"
+            charHnt "HELLO! CAN YOU HEAR ME??"
             play sound "sfx/footsteps-leaves.mp3"
-            i "Tu speak Engleish?!"
+            charHnt "Tu speak Engleish?!"
             play sound "sfx/bone.mp3"
-            i "HELP ME -"
+            charHnt "HELP ME -"
             play music "music/oof2.mp3"
             "The man’s head is totally swallowed up by the cannibal, who bit it clean off."
             "...Yikes."
@@ -1176,37 +1184,37 @@ label t3:
         "Close the bear trap further.":
             "You move sneakily closer..."
             scene trap with fade
-            i "Bless your heart, young one." 
-            i "Truly, you are -"
+            charHnt "Bless your heart, young one." 
+            charHnt "Truly, you are -"
             play sound "sfx/trap.mp3"
             "...and slam the bear trap down on the hunter’s foot."
-            i "Oh God!"
+            charHnt "Oh God!"
             play music "music/determinator.mp3"
             # *Visuals: A foot torn off the body and stuck in the trap.*
-            i "Wait..."
-            i "Y-You..."
-            i "You freed me!"
-            i "Thank you, brave one." 
-            i "My very own savior!"
-            a "...sure."
+            charHnt "Wait..."
+            charHnt "Y-You..."
+            charHnt "You freed me!"
+            charHnt "Thank you, brave one." 
+            charHnt "My very own savior!"
+            charMC "...sure."
             play sound "sfx/wind.mp3"
-            i "I’ll be heading off." 
-            i "I think the cannibal I heard of might be coming down for a visit."
-            i "So kind of you to spare time to save little old me when you could’ve escaped."
-            a "It was no problem."
-            i "Now go!"
-            i "I think I can hold him off with this shotgun right here."
-            a " Good luck!"
+            charHnt "I’ll be heading off." 
+            charHnt "I think the cannibal I heard of might be coming down for a visit."
+            charHnt "So kind of you to spare time to save little old me when you could’ve escaped."
+            charMC "It was no problem."
+            charHnt "Now go!"
+            charHnt "I think I can hold him off with this shotgun right here."
+            charMC " Good luck!"
             "You run away."
             scene tree with fade
             play sound "sfx/running.mp3"
             hide hunter with dissolve
             play sound "sfx/footsteps-cannibal.mp3"
-            i "Hello, brave one!"
+            charHnt "Hello, brave one!"
             play sound "sfx/bone.mp3"
             "You hear in the distance a loud crunch noise."
             play sound "sfx/running.mp3"
-            b "No bullets? Luck really is on my side."
+            charCan "No bullets? Luck really is on my side."
             python:
                 # increase the number of scenarios survived by 1
                 scenariosSurvived += 1 
@@ -1233,17 +1241,17 @@ label badEnd:
     "..."
     "No one ever appears, and you end up crying on the floor."
 
-    a "Well, I guess this is it."
+    charMC "Well, I guess this is it."
     "You think about all the times you were happy and realize that many of those times were due to your friend."
 
     play sound "sfx/footsteps.mp3"
     "As you slowly drift away, your friend appears on the scene and says."
     play music "music/mystery2.mp3"
     show ash at right with dissolve
-    b "You always did have the prettiest nose." 
+    charCan "You always did have the prettiest nose." 
 
     play sound "sfx/limb-lost.mp3"
-    b "Let me fix that."
+    charCan "Let me fix that."
     "You feel a tingling sensation on your face."
     "Suddenly, you realize you lack the power to even breathe."
     "...
@@ -1270,7 +1278,7 @@ label goodEnd:
     "Why do I have to keep running away from someone who could never beat me to the last lamb sandwich in the school's canteen?"
 
     scene street6 with fade
-    a "I'm so done with this! Can no one help me?"
+    charMC "I'm so done with this! Can no one help me?"
     "You yell out, hoping someone will hear."
     play sound "sfx/bloody-floor.mp3"
     "Hehehe."
@@ -1282,20 +1290,20 @@ label goodEnd:
     "Your friend gets closer."
     "You look at your friend, who is now barely visible."
     show ridley with dissolve
-    a "All of these people..."
-    a "Was it really you who did this?"
-    b "I sure have a big appetite."
-    b "I thought you already knew that."
+    charMC "All of these people..."
+    charMC "Was it really you who did this?"
+    charCan "I sure have a big appetite."
+    charCan "I thought you already knew that."
     "As you try not to throw up from the stench, you attempt to stand your ground."
-    a "Do you realize what you've just done?" 
-    a "These were people like you and me." 
-    a "They had futures!"
-    b "Don't you realize how much they mocked me when they went to my parents' restaurant and asked them to serve non-vegan food?" 
-    b "It sickens me to this day how much they enjoy not caring about the world."
-    a "This has to stop!"
-    b "I agree." 
-    b "Chasing you has been quite time-consuming." 
-    b "I even missed out on my favorite TV show."
+    charMC "Do you realize what you've just done?" 
+    charMC "These were people like you and me." 
+    charMC "They had futures!"
+    charCan "Don't you realize how much they mocked me when they went to my parents' restaurant and asked them to serve non-vegan food?" 
+    charCan "It sickens me to this day how much they enjoy not caring about the world."
+    charMC "This has to stop!"
+    charCan "I agree." 
+    charCan "Chasing you has been quite time-consuming." 
+    charCan "I even missed out on my favorite TV show."
 
     play music "music/determinator.mp3"
     "Now seeing how far your friend had fallen, you decide to take matters into your own hands."
@@ -1332,34 +1340,34 @@ label trueEnd:
     play music "music/dark.mp3"
     "You sit on a bench that was close to you and wonder out loud"
     show ridley with dissolve
-    a "When will this ever stop?" 
-    a "I sacrificed so many good people, only for Ash to still be chasing me!"
+    charMC "When will this ever stop?" 
+    charMC "I sacrificed so many good people, only for Ash to still be chasing me!"
     play sound "sfx/laugh.mp3"
     "In the distance, you hear sounds of people having fun."
-    a "This has to be the worst day of my life, and yet they are having a happy day..."
+    charMC "This has to be the worst day of my life, and yet they are having a happy day..."
     play music "music/dark.mp3"
     "Suddenly, you hear footsteps of someone approaching close by."
     show ash at right with dissolve
-    b "Hey! I heard what you were saying."
-    a "When did you get here?"
+    charCan "Hey! I heard what you were saying."
+    charMC "When did you get here?"
 
     "You get up from the bench to start running away but you are grabbed."
     
-    b "Listen, I didn’t know I was hurting you all this time."
+    charCan "Listen, I didn’t know I was hurting you all this time."
     play music "music/mystery2.mp3" 
-    b "I just really wanted to get some of your happiness for myself."
+    charCan "I just really wanted to get some of your happiness for myself."
     "You give up on running away and sit next to your friend."
-    a "Eating me is not the solution to that!" 
-    a "Have you considered talking to me before?" 
-    a "About all of this?" 
-    a "And that happiness, to me, was being friends with you."
+    charMC "Eating me is not the solution to that!" 
+    charMC "Have you considered talking to me before?" 
+    charMC "About all of this?" 
+    charMC "And that happiness, to me, was being friends with you."
     "You continue."
-    a "Is human meat all that great for you to decide to cut ties with me?"
+    charMC "Is human meat all that great for you to decide to cut ties with me?"
     "Your friend makes an expression that you've never seen before and says."
-    b "You don't know until you try it!"
+    charCan "You don't know until you try it!"
     "Your friend shows you a human arm, and right then and there, you succumb to your exhaustion and decide to eat it."
     "Turns out you liked it."
-    b "See? We can still be friends, and you get revenge on this city for not having helped you."
+    charCan "See? We can still be friends, and you get revenge on this city for not having helped you."
 
     play music "music/oof.mp3"
     "You realize that you are being manipulated, but as you still want to be friends, you decide to go with the flow."
