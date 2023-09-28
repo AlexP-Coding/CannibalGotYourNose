@@ -37,24 +37,24 @@ label start:
     # Introduction
 
     # play a song / sound effect
-    play music "sfx/birds.mp3"
+    play sound "sfx/birds.mp3"
     # Show a background with fade
     scene bedroom with fade
     "You wake up to the sound of birds chirping outside your window."
-    play music "sfx/phone.mp3"
+    play sound "sfx/phone.mp3"
     "Then, your phone started ringing."
 
     b "Hey, Ridley! Wanna hang out?" 
-    play music "sfx/birds.mp3"
+    play sound "sfx/birds.mp3"
     a "Sure, where to?" 
     b "A camp. Say bye to your parents and make sure to leave your will!" 
     a "Wait? What do you--"
-    play music "sfx/hang-up.mp3"
+    play sound "sfx/hang-up.mp3"
 
 
     "Oh. He already hang up the call..." 
     a "He can be that weird, sometimes." 
-    play music "sfx/birds.mp3"
+    play sound "sfx/birds.mp3"
 
     "While packing stuff for later, you noticed your parents standing by the door."
 
@@ -74,21 +74,21 @@ label start:
     hide father with fade
     hide mother with fade
 
-    play music "sfx/footsteps.mp3"
+    play sound "sfx/footsteps.mp3"
     scene house with fade
     "After packing and taking a shower, you decide to go downstairs to eat breakfast with your parents"
     "And after that, you head out to see Ash."
 
     scene street with fade
-    play music "sfx/cars.mp3"
+    play sound "sfx/cars.mp3"
     scene police with fade
     show ridley with dissolve 
     "As you approach the restaurant owned by Ash's family, an ambulance can be heard more closely."
-    play music "sfx/police.mp3"
+    play sound "sfx/police.mp3"
     "Getting even closer, you see some police officers taking care of a crowd."
-    play music "sfx/crowd.mp3"
+    play sound "sfx/crowd.mp3"
     "It seems that part of the road had been sealed off due to a recent incident."
-    play music "sfx/footsteps.mp3"
+    play sound "sfx/footsteps.mp3"
     "Not wanting to trespass, you decide to reach the restaurant by going the other way around." 
     scene street2 with fade
     play music "music/notScary.mp3"
@@ -148,7 +148,7 @@ label start:
     "You reach to the restaurant's door handle and open the door."
 
     scene restaurant2 with fade
-    play music "sfx/restaurant.mp3"
+    play sound "sfx/restaurant.mp3"
     "You and Ash ordered food as soon as you found a table for both of you." 
     "You talked for a while about trivial matters until you and your friend had finished your meal." 
     "While wating for the bill, Ash decided to go to the bathroom and stayed there for a while."
@@ -166,13 +166,13 @@ label start:
     a "..."
     b "Well, maybe we should buy that in our way there."
     a "Sounds like a plan."
-    play music "sfx/footsteps.mp3"
+    play sound "sfx/footsteps.mp3"
     "You, accompanied by Ash, leave the restaurant to head for the nearest warehouse store."
 
     scene warehouse with fade
-    play music "sfx/warehouse.mp3"
+    play sound "sfx/warehouse.mp3"
     "With minimal hassle, both arrived at the store to purchase the necessary items." 
-    play music "sfx/radio.mp3"
+    play sound "sfx/radio.mp3"
     "All the while a disturbing bathroom murder was being reported on the radio..."
     a "What's this all about?"
     b "Don't know, don't care."
@@ -181,15 +181,15 @@ label start:
     "After a while, you got everything that was needed for later."
 
     scene street4 with fade
-    play music "sfx/cars2.mp3"
+    play sound "sfx/cars2.mp3"
     "The sun began to set."
     "And with everyone else retreating to the safety of their homes due to the threat of a serial killer on the loose."
 
     scene taxi with fade
-    play music "sfx/horn.mp3"
+    play sound "sfx/horn.mp3"
     "You decided to call a taxi to take you and your friend to the campsite."
     scene campsite with fade
-    play music "sfx/campsite.mp3"
+    play sound "sfx/campsite.mp3"
     "An hour later, the taxi arrived at the campsite."
     show ash with dissolve
     "Ash gets out of the taxi and while you payed for the fare, he begins looking around at the place."
@@ -212,7 +212,7 @@ label d1:
     # distraction 2: Beginning of your End
 
     scene campfire with fade
-    play music "sfx/campsite.mp3"
+    play sound "sfx/campsite.mp3"
 
     "At the campfire, you and your friend cook some food."
     show ash at right with dissolve
@@ -233,10 +233,10 @@ label d1:
 
         # Choice 1:
         "Reach out for the hotpot.":
-            play music "sfx/boiling.mp3"
+            play sound "sfx/boiling.mp3"
             "You throw it at your friend’s face and you see them squirming around."
             hide ash with dissolve
-            play music "sfx/running.mp3"
+            play sound "sfx/running.mp3"
             "You are free to run away."
             python:
                 # increase the number of scenarios survived by 1
@@ -251,7 +251,7 @@ label d1:
         # Choice 2:
         "Wrestle free from their grasp.":
             "But soon realize that he is stronger than you."
-            play music "sfx/limb-lost.mp3"
+            play sound "sfx/limb-lost.mp3"
             scene limb-lost with fade
             "Your friend gets a body part of yours."
             hide ridley with dissolve
@@ -276,12 +276,12 @@ label d2:
     # Distraction 3: Hotdog Panic
     
     scene street8 with fade
-    play music "sfx/running.mp3"
+    play sound "sfx/running.mp3"
     show ridley at left with dissolve
     show ash at right with dissolve
     "Now in the city, you spot your cannibal friend behind you, and you immediately start running away." 
     hide ash with dissolve
-    play music "sfx/bump.mp3"
+    play sound "sfx/bump.mp3"
     "Unfortunately, you end up colliding with someone who was carrying a hotdog."
     show Hotdog lover at right with dissolve
 
@@ -298,7 +298,7 @@ label d2:
             e "Don’t worry, I don’t mind it that much."
             a "What?"
             "You said as you blankly stared at your friend who was now assisting the person you just bumped into."
-            play music "sfx/limb-lost.mp3"
+            play sound "sfx/limb-lost.mp3"
             scene limb-lost with fade
             "Your friend takes this opportunity to get a body part of yours."
 
@@ -319,7 +319,7 @@ label d2:
         "Quickly apologize to the person.":
             a "Sorry, my bad."
             "After that, you glance back to see your friend devouring the hotdog that had fallen to the ground." 
-            play music "sfx/eat.mp3"
+            play sound "sfx/eat.mp3"
             show ash with dissolve
             "You realize that he also has a grip on your arm."
             play music "music/oof2.mp3"
@@ -330,15 +330,15 @@ label d2:
             hide ash with dissolve
             hide Hotdog lover with dissolve
             "He lets go of your arm, and you hastily head for the nearby hotdog stand." 
-            play music "sfx/falling.mp3"
+            play sound "sfx/falling.mp3"
             scene stand with fade
             "You jump on it, attempting to drive it like a racing car, resulting in all the hotdogs spilling out from behind the hotdog stand, causing your friend to chase you." 
             b "Come back here!"
             show ash with dissolve
-            play music "sfx/rolling.mp3"
+            play sound "sfx/rolling.mp3"
             b "All these hotdogs are not as good as your flesh!"
             "A few minutes later, you jump out of the hotdog stand."
-            play music "sfx/falling-ground.mp3"
+            play sound "sfx/falling-ground.mp3"
             "As you safely land on top of a shrub of plants, you see your friend still chasing the hotdog stand."
             hide ash with dissolve
             "You are free to run away."
@@ -360,7 +360,7 @@ label d3:
 
     
     scene street8 with fade
-    play music "sfx/running.mp3"
+    play sound "sfx/running.mp3"
     show ridley with dissolve
     show ash at left with dissolve
 
@@ -406,7 +406,7 @@ label d3:
                 a "Wait, no!"
                 a "Stop!!!"
 
-                play music "sfx/limb-lost.mp3"
+                play sound "sfx/limb-lost.mp3"
                 scene limb-lost with fade
                 "Your friend gets a body part of yours."
 
@@ -510,7 +510,7 @@ label d4:
     # Distraction 7
 
     scene street5 with fade
-    play music "sfx/running.mp3"
+    play sound "sfx/running.mp3"
     show ridley with dissolve
     show ash at left with dissolve
     "After running for your dear life, Ash still manages to stay close to you."
@@ -532,11 +532,11 @@ label d4:
             if limbs >= 4:
                 scene street6 with fade
                 a "OH MY GOD, is that Annabelle Hektor?!"
-                play music "sfx/wind.mp3"
+                play sound "sfx/wind.mp3"
                 b "Where??"
                 "You distracted Ash."
                 hide ash with dissolve
-                play music "sfx/running.mp3"
+                play sound "sfx/running.mp3"
                 "You run away."
                 python:
                     # increase the number of scenarios survived by 1
@@ -557,13 +557,13 @@ label d4:
                 b "Oh? "
                 a "It’s..."
                 a "It’s your twin sister!"
-                play music "sfx/laugh.mp3"
+                play sound "sfx/laugh.mp3"
                 b "Nice try."
-                play music "sfx/wind.mp3"
+                play sound "sfx/wind.mp3"
                 b "I ate her in the womb."
                 a "..."
                 hide ash with dissolve
-                play music "sfx/limb-lost.mp3"
+                play sound "sfx/limb-lost.mp3"
                 scene limb-lost with fade
                 "Your friend takes this opportunity to get a body part of yours."
 
@@ -590,13 +590,13 @@ label d4:
                 scene street8 with fade
                 "You gather momentum for a massive Ronaldo-style kick."
                 "It strikes true!"
-                play music "sfx/bone.mp3"
+                play sound "sfx/bone.mp3"
                 "You no longer have to worry about little baby cannibals running around."
                 a "You deserved it!"
 
                 "You should probably worry about getting away, though."
                 hide ash with dissolve
-                play music "sfx/running.mp3"
+                play sound "sfx/running.mp3"
                 "You run away."
                 python:
                     # increase the number of scenarios survived by 1
@@ -616,7 +616,7 @@ label d4:
                 "You wobble around on your legless torso and manage to hop all the way up!"
                 scene street8 with fade
                 b "I’ve seen mightier penguins."
-                play music "sfx/limb-lost.mp3"
+                play sound "sfx/limb-lost.mp3"
                 scene limb-lost with fade
                 "Your friend takes this opportunity to get a body part of yours."
 
@@ -631,7 +631,7 @@ label d4:
 
                 b "Might as well move, old friend. You’ll take some time to digest."
                 hide ash with dissolve
-                play music "sfx/running.mp3"
+                play sound "sfx/running.mp3"
                 "You somehow ran away."
                 # Check if the character has no more limbs before going to the badEnd
                 if limbs <= 0:
@@ -649,7 +649,7 @@ label t1:
     # Trick 6: Train to...
 
     scene tunnel with fade
-    play music "sfx/running.mp3"
+    play sound "sfx/running.mp3"
 
     "Still running away from your impending doom, you stumble upon a train station!"
 
@@ -657,7 +657,7 @@ label t1:
     if limbs == 5:
         # Situation 1:
         scene booth with fade
-        play music "sfx/crowd.mp3"
+        play sound "sfx/crowd.mp3"
         show ridley at left with dissolve
         "Without hesitating, you enter the station and spot some telephone booths."
         "Blessed with the opportunity to finally call your parents for help, you realize, unfortunately, that you have no money on hand."
@@ -668,7 +668,7 @@ label t1:
             # Choice 1:
             "Leave the call for later and rush to the nearest train that has just arrived at the station.":
                 scene train3 with fade
-                play music "sfx/train.mp3"
+                play sound "sfx/train.mp3"
                 "Upon entering the carriage, however, a person rudely talks with you."
                 "Someone gets close to you and asks."
                 "Can I see your ticket?!"
@@ -684,7 +684,7 @@ label t1:
                 b "Forgot something?" 
                 "Your friend shows you your wallet."
                 b "You have nowhere else to run off to!"
-                play music "sfx/running.mp3"
+                play sound "sfx/running.mp3"
                 "In a split second, perhaps due to desperation, you push the train conductor, who was standing next to you, with all your might in your friend’s direction."
                 "Your friend gets distracted." 
                 hide ash with dissolve
@@ -707,11 +707,11 @@ label t1:
             # Choice 2:
             "Head to the nearest vending machine to check if there's some pocket change underneath it.":
                 scene machine with fade
-                play music "sfx/train.mp3"
+                play sound "sfx/train.mp3"
                 "Thankfully, you find a lot of coins, enough to even buy a train ticket, so you do so."
                 scene train4 with fade
                 "Afterwards, you get inside the train and show it to the train conductor."
-                play music "sfx/train.mp3"
+                play sound "sfx/train.mp3"
                 show conductor with dissolve
                 f "Thanks."
                 f "Have a safe journey."
@@ -737,7 +737,7 @@ label t1:
 
                 "Your friend gets a body part of yours."
                 hide ridley with dissolve
-                play music "sfx/limb-lost.mp3"
+                play sound "sfx/limb-lost.mp3"
                 scene limb-lost with fade
 
                 python:
@@ -781,7 +781,7 @@ label t1:
                 "You ask."
                 a "Could you lend me your phone for a minute?"
                 g "Sure. Let me just call someone first."
-                play music "sfx/hang-up.mp3"
+                play sound "sfx/hang-up.mp3"
                 "She makes her call and when placing her phone in my hand, the lights on the train go out."
                 scene lightout with fade
                 play music "music/oof.mp3"
@@ -796,7 +796,7 @@ label t1:
                 "You recognized that voice from the same person who you were running away from."
                 a "That voice. How did you get in here?"
                 "Your question is left unanswered as you suddenly feel someone grabbing you."
-                play music "sfx/limb-lost.mp3"
+                play sound "sfx/limb-lost.mp3"
                 scene limb-lost2 with fade
                 "They both get a body part of yours."
 
@@ -833,10 +833,10 @@ label t1:
                 "Instead of sitting, you decide to press the emergency button to safely exit the train."
                 g "Stay still." 
                 g "Wouldn’t want you to get injured in any way."
-                play music "sfx/train.mp3"
+                play sound "sfx/train.mp3"
                 "After saying this, she tries to grab you, but you dodge, leading her out through the open train doors, resulting in her death."
                 "You hear fast footsteps approaching from the next train carriage so, in a split second, you decide to leave the train."
-                play music "sfx/train.mp3"
+                play sound "sfx/train.mp3"
                 "The train was still moving but you gathered courage."
                 a "C’mon! I can make this."
                 "You jump out of the moving train, landing safely in a shrub of land."
@@ -868,7 +868,7 @@ return
 label t2:
     # Trick 1: Duck Man
     scene pond with fade
-    play music "sfx/pond.mp3"
+    play sound "sfx/pond.mp3"
 
     show ridley at left with dissolve
     show duck-man with dissolve
@@ -902,17 +902,17 @@ label t2:
                 h "Another drug addict..." 
                 h "I know how to deal with the likes of you."
                 "He unsheathes a rubber chicken knife that, although ridiculous, looks very deadly."
-                play music "sfx/quack.mp3"
+                play sound "sfx/quack.mp3"
                 a "Uh? What...?"
                 play music "music/notScary.mp3"
                 "He starts chasing you with his rubber chicken knife!"
                 a "AHHH!"
                 "You go back where you came from." 
-                play music "sfx/running.mp3"
+                play sound "sfx/running.mp3"
                 "When spotting your friend, the cannibal, you trip!" 
                 "Leading the Duck Man straight into the cannibal's grasp."
                 hide duck-man with dissolve
-                play music "sfx/running.mp3"
+                play sound "sfx/running.mp3"
 
                 "You run away!"
                 python:
@@ -934,17 +934,17 @@ label t2:
                 h "Another drug addict..."
                 h "I know how to deal with the likes of you."
                 "He unsheathes a rubber chicken knife that, although ridiculous, looks very deadly!"
-                play music "sfx/quack.mp3"
+                play sound "sfx/quack.mp3"
                 a "Uh? What...?"
                 play music "music/notScary.mp3"
                 "You attempt to run!" 
                 "But, due to your lack of limbs, you can only hop slowly." 
-                play music "sfx/running.mp3"
+                play sound "sfx/running.mp3"
                 "Duck Man ends up getting you..."
                 hide duck-man with dissolve
                 "You get stabbed but don't die, since, obviously, a rubber chicken knife can only do so much."
                 hide ridley with dissolve
-                play music "sfx/limb-lost.mp3"
+                play sound "sfx/limb-lost.mp3"
                 scene limb-lost with fade
                 "While lying on the floor, the cannibal catches up to you and takes a part of your body."
             python:
@@ -997,7 +997,7 @@ label t2:
             h "These stupid ducks deserve this!" 
             h "They killed my grandma!"
             "While the Duck Man’s back is turned towards them, the very wholesome ducks begin gathering right behind him."
-            play music "sfx/quack.mp3"
+            play sound "sfx/quack.mp3"
             h "Wha- AAHHHHHHH!"
             play music "music/oof.mp3"
             scene ducks with fade
@@ -1009,7 +1009,7 @@ label t2:
             "You notice that the cannibal has no meat to eat."
             "So he ends up getting you, instead."
             hide ridley with dissolve
-            play music "sfx/limb-lost.mp3"
+            play sound "sfx/limb-lost.mp3"
             scene limb-lost with fade
             python:
                 # Reduce the limbs by 1
@@ -1032,7 +1032,7 @@ label t2:
                 a "Just, stay here."
                 a "In that exact position you are in right now."
                 h "Weirdo..."
-                play music "sfx/footsteps.mp3"
+                play sound "sfx/footsteps.mp3"
                 scene tree with fade
                 "You pretend to leave the vicinity, but manage to hide behind a large tree."
                 "You look around searching for the perfect tree to bonk on the Duck Man’s head."
@@ -1060,7 +1060,7 @@ label t2:
                 a "Just, stay here."
                 a "In that exact position you are in right now."
                 h "Weirdo..."
-                play music "sfx/footsteps.mp3"
+                play sound "sfx/footsteps.mp3"
                 scene tree with fade
                 "You pretend to leave the vicinity, but manage to hide behind a large tree."
                 "You look around searching for the perfect tree to bonk on the Duck Man’s head."
@@ -1075,7 +1075,7 @@ label t2:
                 "He gets you."
                 "The cannibal has a hard laugh while he bites a chunk out of you."
                 hide ridley with dissolve
-                play music "sfx/limb-lost.mp3"
+                play sound "sfx/limb-lost.mp3"
                 scene limb-lost with fade
                 python:
                     # Reduce the limbs by 1
@@ -1096,7 +1096,7 @@ label t2:
                 a "Just, stay here."
                 a "In that exact position you are in right now."
                 h "Weirdo..."
-                play music "sfx/footsteps.mp3"
+                play sound "sfx/footsteps.mp3"
                 scene tree with fade
                 "You pretend to leave the vicinity, but manage to hide behind a large tree."
                 "You look around searching for the perfect tree to bonk on the Duck Man’s head."
@@ -1106,7 +1106,7 @@ label t2:
                 "This tree does not seem to move even with super strength!"
                 "Sad and depressed, you just sit down and wait for the cannibal to get ya..."
                 hide ridley with dissolve
-                play music "sfx/limb-lost.mp3"
+                play sound "sfx/limb-lost.mp3"
                 scene limb-lost with fade
                 python:
                     # Reduce the limbs by 1
@@ -1126,7 +1126,7 @@ return
 label t3:
     # Trick 8: Forest Follies
     scene forest with fade
-    play music "sfx/running.mp3"
+    play sound "sfx/running.mp3"
     show ridley at left with dissolve
 
     "After a whole lotta sprinting, you find a hunter stuck in a bear trap."
@@ -1149,9 +1149,9 @@ label t3:
             i "Hello?"
             "The hunter was still trying to reach you but you decide to still ignore him."
             i "HELLO! CAN YOU HEAR ME??"
-            play music "sfx/footsteps-leaves.mp3"
+            play sound "sfx/footsteps-leaves.mp3"
             i "Tu speak Engleish?!"
-            play music "sfx/bone.mp3"
+            play sound "sfx/bone.mp3"
             i "HELP ME -"
             play music "music/oof2.mp3"
             "The man’s head is totally swallowed up by the cannibal, who bit it clean off."
@@ -1159,7 +1159,7 @@ label t3:
             "Oh, well. Qué será, será."
             "You should probably bail while you have the time, though..."
             hide hunter with dissolve
-            play music "sfx/running.mp3"
+            play sound "sfx/running.mp3"
             "You run away!"
             # *Sound: Sniffing, then growling.*
             python:
@@ -1178,7 +1178,7 @@ label t3:
             scene trap with fade
             i "Bless your heart, young one." 
             i "Truly, you are -"
-            play music "sfx/trap.mp3"
+            play sound "sfx/trap.mp3"
             "...and slam the bear trap down on the hunter’s foot."
             i "Oh God!"
             play music "music/determinator.mp3"
@@ -1189,7 +1189,7 @@ label t3:
             i "Thank you, brave one." 
             i "My very own savior!"
             a "...sure."
-            play music "sfx/wind.mp3"
+            play sound "sfx/wind.mp3"
             i "I’ll be heading off." 
             i "I think the cannibal I heard of might be coming down for a visit."
             i "So kind of you to spare time to save little old me when you could’ve escaped."
@@ -1199,13 +1199,13 @@ label t3:
             a " Good luck!"
             "You run away."
             scene tree with fade
-            play music "sfx/running.mp3"
+            play sound "sfx/running.mp3"
             hide hunter with dissolve
-            play music "sfx/footsteps-cannibal.mp3"
+            play sound "sfx/footsteps-cannibal.mp3"
             i "Hello, brave one!"
-            play music "sfx/bone.mp3"
+            play sound "sfx/bone.mp3"
             "You hear in the distance a loud crunch noise."
-            play music "sfx/running.mp3"
+            play sound "sfx/running.mp3"
             b "No bullets? Luck really is on my side."
             python:
                 # increase the number of scenarios survived by 1
@@ -1225,7 +1225,7 @@ label badEnd:
     # End up with all limbs eaten (by not tricking enough).
 
     scene street0 with fade
-    play music "sfx/cars2.mp3"
+    play sound "sfx/cars2.mp3"
     # ridley sprite without limbs
     show ridley with dissolve 
 
@@ -1236,13 +1236,13 @@ label badEnd:
     a "Well, I guess this is it."
     "You think about all the times you were happy and realize that many of those times were due to your friend."
 
-    play music "sfx/footsteps.mp3"
+    play sound "sfx/footsteps.mp3"
     "As you slowly drift away, your friend appears on the scene and says."
     play music "music/mystery2.mp3"
     show ash at right with dissolve
     b "You always did have the prettiest nose." 
 
-    play music "sfx/limb-lost.mp3"
+    play sound "sfx/limb-lost.mp3"
     b "Let me fix that."
     "You feel a tingling sensation on your face."
     "Suddenly, you realize you lack the power to even breathe."
@@ -1263,7 +1263,7 @@ label goodEnd:
     # Ridley has to have a weapon (pistol/saw) and has to survive 3 or more scenarios.
 
     scene street8 with fade
-    play music "sfx/running.mp3"
+    play sound "sfx/running.mp3"
     show ridley with dissolve
 
     "As you continue running away, anger starts to creep into your thoughts"
@@ -1272,12 +1272,12 @@ label goodEnd:
     scene street6 with fade
     a "I'm so done with this! Can no one help me?"
     "You yell out, hoping someone will hear."
-    play music "sfx/bloody-floor.mp3"
+    play sound "sfx/bloody-floor.mp3"
     "Hehehe."
     "You hear someone laugh from not too far away"
     "As you look around, you realize where you've just run into."
     scene alley with fade
-    play music "sfx/footsteps-cannibal.mp3"
+    play sound "sfx/footsteps-cannibal.mp3"
     "You noticed a lot of people on the ground, motionless..."
     "Your friend gets closer."
     "You look at your friend, who is now barely visible."
@@ -1303,12 +1303,12 @@ label goodEnd:
     show ash at right with dissolve
     "Ash, now clearly visible, can hardly move as his stomach has ballooned from overeating."
     "Yet, even with a chance to run away, you are determined to end it here."
-    play music "sfx/explosion.mp3"
+    play sound "sfx/explosion.mp3"
     "You wield your weapon, and then, your friend blows up in a grotesque manner."
     "You are so shocked by this that you end up unconscious" 
 
     scene hospital with fade
-    play music "sfx/birds.mp3"
+    play sound "sfx/birds.mp3"
     "The next day, you open your eyes in a hospital bed, nearby you see your parents asleep on some chairs."
     "You turn on the TV to see that the news is talking about a serial killer who was recently arrested for life—your friend."
     "You breathe a sigh of relief as you realize that you no longer have to run away."
@@ -1325,7 +1325,7 @@ label trueEnd:
     #  Sacrificed/ Tricked 4 or more people.
 
     scene street7 with fade
-    play music "sfx/running.mp3"
+    play sound "sfx/running.mp3"
     "After a long night, you find yourself exhausted and in dire need of nutrition." 
 
     scene bench with fade
@@ -1334,7 +1334,7 @@ label trueEnd:
     show ridley with dissolve
     a "When will this ever stop?" 
     a "I sacrificed so many good people, only for Ash to still be chasing me!"
-    play music "sfx/laugh.mp3"
+    play sound "sfx/laugh.mp3"
     "In the distance, you hear sounds of people having fun."
     a "This has to be the worst day of my life, and yet they are having a happy day..."
     play music "music/dark.mp3"
