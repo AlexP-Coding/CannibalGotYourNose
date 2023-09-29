@@ -373,7 +373,7 @@ label d3:
     show ash at left with dissolve
 
     "Maybe it's over." 
-    play sound "panting-7108.mp3"
+    play sound "sfx/panting-7108.mp3"
     charMC "How big can his stomach be?"
     "You wonder how he can keep running after you with all that food in his body." 
     play music "sfx/crowded-avenue-people-talking-vendors-shouting-musicians-playing-part-1-7099.mp3"
