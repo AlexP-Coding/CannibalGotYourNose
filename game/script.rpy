@@ -367,7 +367,7 @@ label d3:
     # Distraction 8: CALVES!
 
     
-    scene street8 with fade
+    scene street9 with fade
     play sound "sfx/running.mp3"
     show ridley with dissolve
     show ash at left with dissolve
@@ -597,7 +597,7 @@ label d4:
 
         # Choice 2:
         "Kick him where the sun don’t shine":
-            if limbs == 2:
+            if limbs >= 2:
                 scene street8 with fade
                 "You gather momentum for a massive Ronaldo-style kick."
                 "It strikes true!"
