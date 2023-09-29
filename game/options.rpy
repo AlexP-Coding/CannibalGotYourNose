@@ -95,7 +95,7 @@ Happy gaming!
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "OopsaCannibalGotYourNose!"
+define build.name = "OopsaCannibalGotYourNose"
 
 
 ## Sounds and music ############################################################
