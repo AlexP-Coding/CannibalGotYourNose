@@ -373,8 +373,10 @@ label d3:
     show ash at left with dissolve
 
     "Maybe it's over." 
+    play sound "panting-7108.mp3"
     charMC "How big can his stomach be?"
     "You wonder how he can keep running after you with all that food in his body." 
+    play music "sfx/crowded-avenue-people-talking-vendors-shouting-musicians-playing-part-1-7099.mp3"
     charMC "Why does he want your meat? There's so many people around…" 
     charMC "Why can’t he pick one of them?" 
     charMC "What’s so tasty about me?"
@@ -387,6 +389,7 @@ label d3:
     charCan "I mean, look at these calves." 
 
     charCan "So sexy..."
+    play sound "sfx/long-kiss-41029.mp3"
     charMC "Are you... making out with your calves?"
     charCan "*coughs*" 
     charCan "Anyway, what was I saying?"
@@ -475,6 +478,7 @@ label d3:
             charMC "Remember?"
             charCan "Not really..."
             charMC "Of course you don't, you silly head!" 
+            play music "sfx/old-friendship-130829.mp3"
             charMC "You used to eat them all." 
             charMC "Ahh, things normal children do."
             charCan "Uhh. If you say so."
