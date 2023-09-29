@@ -463,7 +463,7 @@ label d3:
                 
                 "[sacrifices_text]"
 
-                # Check if the character has sacrificed more or equal to 5 people to go to true end
+                # Check if the character has sacrificed more or equal to 4 people to go to true end
                 if sacrifices >= 4:
                     jump trueEnd
                 else:
@@ -506,8 +506,8 @@ label d3:
 
             "[survived_text]"
 
-            # Check if the character has survived more or equal to 4 scenarios,go to true end
-            if weapon == True and scenariosSurvived >= 4 and limbs != 0 and sacrifices>= 3:
+            # Check if the character has survived more or equal to 3 scenarios, go to good end
+            if weapon == True and scenariosSurvived >= 3 and limbs != 0 and sacrifices <= 3:
                 jump goodEnd
             else:
                 jump t1
@@ -556,8 +556,8 @@ label d4:
                     survived_text = "You have survived {} scenario(s).".format(scenariosSurvived)
 
                 "[survived_text]"
-                # Check if the character has survived more or equal to 4 scenarios,go to true end
-                if weapon == True and scenariosSurvived >= 4 and limbs != 0 and sacrifices>= 3:
+                # Check if the character has survived more or equal to 3 scenarios, go to good end
+                if weapon == True and scenariosSurvived >= 3 and limbs != 0 and sacrifices <= 3:
                     jump goodEnd
                 else:
                     jump d3
@@ -617,8 +617,8 @@ label d4:
 
                 "[survived_text]"
                 
-                # Check if the character has survived more or equal to 4 scenarios,go to true end
-                if weapon == True and scenariosSurvived >= 4 and limbs != 0 and sacrifices>= 3:
+                # Check if the character has survived more or equal to 3 scenarios, go to good end
+                if weapon == True and scenariosSurvived >= 3 and limbs != 0 and sacrifices <= 3:
                     jump goodEnd
                 else:
                     jump d3
@@ -867,8 +867,8 @@ label t1:
                 
                 "[remaining_limbs_text]"
                 "You somehow ran away."
-                # Check if the character has survived more or equal to 4 scenarios,go to true end
-                if weapon == True and scenariosSurvived >= 4 and limbs != 0 and sacrifices>= 3:
+                # Check if the character has survived more or equal to 3 scenarios, go to good end
+                if weapon == True and scenariosSurvived >= 3 and limbs != 0 and sacrifices <= 3:
                     jump goodEnd
                 else:
                     jump noEnd
@@ -1324,7 +1324,7 @@ label goodEnd:
     scene hospital with fade
     play sound "sfx/birds.mp3"
     "The next day, you open your eyes in a hospital bed, nearby you see your parents asleep on some chairs."
-    "You turn on the TV to see that the news is talking about a serial killer who was recently arrested for life—your friend."
+    "You turn on the TV to see that the news is talking about how a serial killer was found dead next to his victims."
     "You breathe a sigh of relief as you realize that you no longer have to run away."
     "Yet..."
     "You feel a bit sad about your friend, Ash."
