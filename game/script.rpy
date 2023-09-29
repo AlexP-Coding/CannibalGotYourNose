@@ -910,7 +910,7 @@ label t2:
                 charDck "Another drug addict..." 
                 charDck "I know how to deal with the likes of you."
                 "He unsheathes a rubber chicken knife that, although ridiculous, looks very deadly."
-                play sound "sfx/quack.mp3"
+                play sound "sfx/squeaky-toy-1-6059.mp3"
                 charMC "Uh? What...?"
                 play music "music/notScary.mp3"
                 "He starts chasing you with his rubber chicken knife!"
@@ -942,7 +942,7 @@ label t2:
                 charDck "Another drug addict..."
                 charDck "I know how to deal with the likes of you."
                 "He unsheathes a rubber chicken knife that, although ridiculous, looks very deadly!"
-                play sound "sfx/quack.mp3"
+                play sound "sfx/squeaky-toy-1-6059.mp3"
                 charMC "Uh? What...?"
                 play music "music/notScary.mp3"
                 "You attempt to run!" 
@@ -950,6 +950,7 @@ label t2:
                 play sound "sfx/running.mp3"
                 "Duck Man ends up getting you..."
                 hide duck-man with dissolve
+                play sound "sfx/rubber-chicken-96436.mp3"
                 "You get stabbed but don't die, since, obviously, a rubber chicken knife can only do so much."
                 hide ridley with dissolve
                 play sound "sfx/limb-lost.mp3"
@@ -982,6 +983,7 @@ label t2:
             charMC "I’ve sacrificed so much, so many things, so many people..." 
             charMC "Maybe you will get the gods to listen to me."
             "Duck Man, trapped between you and the pond, faints dramatically." 
+            play sound "sfx/sound-effect-scream-thump-groan-159317.mp3"
             hide duck-man with dissolve
             "You prepare the Duck Man to make him more appealing to your dear cannibal friend."
             charMC "Can’t believe that worked!"
@@ -1007,6 +1009,7 @@ label t2:
             "While the Duck Man’s back is turned towards them, the very wholesome ducks begin gathering right behind him."
             play sound "sfx/quack.mp3"
             charDck "Wha- AAHHHHHHH!"
+            play sound "sfx/607226__d4xx__ducks-_1_.mp3"
             play music "music/oof.mp3"
             scene ducks with fade
             "The Duck Man is pulled into the lake and every last bit of his flesh is devoured by the previously wholesome ducks."
@@ -1016,6 +1019,7 @@ label t2:
             show ash at right with dissolve
             "You notice that the cannibal has no meat to eat."
             "So he ends up getting you, instead."
+            play sound "sfx/wahwahwahwaaaahahahahahaha-94669.mp3"
             hide ridley with dissolve
             play sound "sfx/limb-lost.mp3"
             scene limb-lost with fade
@@ -1048,6 +1052,7 @@ label t2:
                 play music "music/oof.mp3"
                 "You saw the tree to make it fall." 
                 "Ending the Duck Man’s life as soon as it bonked on him."
+                play sound "sfx/man-scream-121085 (2).mp3"
                 hide duck-man with dissolve
                 "The Duck Man ends up getting a bit.. squished." 
                 "You just hope the cannibal doesn't mind it that much."
