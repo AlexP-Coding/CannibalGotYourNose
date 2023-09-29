@@ -1254,8 +1254,7 @@ label badEnd:
     charCan "Let me fix that."
     "You feel a tingling sensation on your face."
     "Suddenly, you realize you lack the power to even breathe."
-    "...
-    "
+    "..."
     play music "music/oof.mp3"
     hide ridley with dissolve
     hide ash with dissolve
@@ -1274,7 +1273,7 @@ label goodEnd:
     play sound "sfx/running.mp3"
     show ridley with dissolve
 
-    "As you continue running away, anger starts to creep into your thoughts"
+    "As you continue running away, anger starts to creep into your thoughts."
     "Why do I have to keep running away from someone who could never beat me to the last lamb sandwich in the school's canteen?"
 
     scene street6 with fade
@@ -1282,7 +1281,7 @@ label goodEnd:
     "You yell out, hoping someone will hear."
     play sound "sfx/bloody-floor.mp3"
     "Hehehe."
-    "You hear someone laugh from not too far away"
+    "You hear someone laugh from not too far away."
     "As you look around, you realize where you've just run into."
     scene alley with fade
     play sound "sfx/footsteps-cannibal.mp3"
