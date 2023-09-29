@@ -50,7 +50,7 @@ label start:
     scene bedroom with fade
     "You wake up to the sound of birds chirping outside your window."
     play sound "sfx/phone.mp3"
-    "Then, your phone started ringing."
+    "Then, your phone starts ringing."
 
     charNotYetCan "Hey, Ridley! Wanna hang out?" 
     play sound "sfx/birds.mp3"
@@ -60,11 +60,11 @@ label start:
     play sound "sfx/hang-up.mp3"
 
 
-    "Oh. He already hang up the call..." 
+    "Oh. He already hung up..." 
     charMC "He can be that weird, sometimes." 
     play sound "sfx/birds.mp3"
 
-    "While packing stuff for later, you noticed your parents standing by the door."
+    "While packing stuff for later, you notice your parents standing by the door."
 
     show mother with dissolve
     show father at right with dissolve
@@ -73,7 +73,7 @@ label start:
     # Character sprite
     show ridley at left with dissolve
     charMC "Camping." 
-    "You answered while shrugging"
+    "You answer while shrugging"
     charMom "Okay, just be sure to have your phone with you at all times." 
     charMC "Sure!"
     charDad "Don't forget that we won't be here for the weekend."
@@ -85,13 +85,13 @@ label start:
     play sound "sfx/footsteps.mp3"
     scene house with fade
     "After packing and taking a shower, you decide to go downstairs to eat breakfast with your parents"
-    "And after that, you head out to see Ash."
+    "Then, you head out to see Ash."
 
     scene street with fade
     play sound "sfx/cars.mp3"
     scene police with fade
     show ridley with dissolve 
-    "As you approach the restaurant owned by Ash's family, an ambulance can be heard more closely."
+    "As you approach the restaurant owned by Ash's family, an ambulance can be heard nearby."
     play sound "sfx/police.mp3"
     "Getting even closer, you see some police officers taking care of a crowd."
     play sound "sfx/crowd.mp3"
@@ -160,7 +160,7 @@ label start:
     "You and Ash ordered food as soon as you found a table for both of you." 
     "You talked for a while about trivial matters until you and your friend had finished your meal." 
     "While wating for the bill, Ash decided to go to the bathroom and stayed there for a while."
-    "He did reappear after and even helped in paying the bill."
+    "He reappeared after and even helped in paying the bill."
     "It did leave you confused as to what he was doing in there for so long..."
     charMC "Are you ok, buddy?"
     "You ask Ash when you see an expression on his face that left you curious."
@@ -175,7 +175,7 @@ label start:
     charNotYetCan "Well, maybe we should buy that in our way there."
     charMC "Sounds like a plan."
     play sound "sfx/footsteps.mp3"
-    "You, accompanied by Ash, leave the restaurant to head for the nearest warehouse store."
+    "You, accompanied by Ash, leave the restaurant and head for the nearest warehouse store."
 
     scene warehouse with fade
     play sound "sfx/warehouse.mp3"
@@ -200,14 +200,14 @@ label start:
     play sound "sfx/campsite.mp3"
     "An hour later, the taxi arrived at the campsite."
     show ash with dissolve
-    "Ash gets out of the taxi and while you payed for the fare, he begins looking around at the place."
+    "Ash gets out of the taxi and while you were paying for the fare, he began looking around at the place."
     charNotYetCan "That place looks good."
     charNotYetCan "Let's stay there."
     "Ash said, as he pointed to an isolated part of the campsite."
     show ridley at left with dissolve
     charMC "Sure."
     "With not much choice on the matter." 
-    "You agree on also staying in that place for the evening."
+    "You agree on staying in that place for the evening."
     # This ends the introduction.
 
     # go to campsite scenario
@@ -225,7 +225,7 @@ label d1:
     "At the campfire, you and your friend cook some food."
     show ash at right with dissolve
     show ridley with dissolve
-    "And you leave your friend in charge of the meat boiling in the pot."
+    "You leave your friend in charge of the meat boiling in the pot."
     "You look away for a second, and then..." 
     play music "music/oof.mp3"
     "You witness Ash devouring all the meat that was in the pot."
@@ -233,7 +233,7 @@ label d1:
     charNotYetCan " s t i l l" 
     charCan "h u n g r y"
     "Still hungry, he reaches out towards you, attempting to take a bite out of your nose."
-    "You attempt to make a run for it, but unfortunately, he manages to grab onto your leg."
+    "You try to make a run for it, but unfortunately, he manages to grab onto your leg."
 
     play music "music/quick.mp3"
     menu:
@@ -732,12 +732,12 @@ label t1:
                 play music "music/oof2.mp3"
                 "Suddenly, the train experiences a terrible accident."
                 "You wake up to a terrible scene that left you shocked."
-                "Trying to stand up from the ground, you check your whole body for any injuries." 
+                "Trying to get up from the ground, you check your whole body for any injuries." 
                 "Thankfully, you were fine but soon realized something frightful."
                 charMC "I gotta get out of here." 
                 charMC "This train accident may not have been a regular accident after all."
                 charCan "Well, well..." 
-                charCan "Someone’s using their brain. I’m proud of you."
+                charCan "Someone’s been using their brain. I’m proud of you."
                 "You look up to see where the voice was coming from." 
                 show ash at right with dissolve
                 "You realize it was your friend and he was already grabbing you."
@@ -790,13 +790,13 @@ label t1:
                 charMC "Could you lend me your phone for a minute?"
                 charDtv "Sure. Let me just call someone first."
                 play sound "sfx/hang-up.mp3"
-                "She makes her call and when placing her phone in my hand, the lights on the train go out."
+                "She makes her call and when placing her phone on your hand, the lights on the train go out."
                 scene lightout with fade
                 play music "music/oof.mp3"
                 hide detective with dissolve
                 hide ridley with dissolve
                 charMC "What’s going on?"
-                charDtv "Nothing you should worry about. Just remain there for a while."
+                charDtv "Nothing you should worry about. Just stay here for a while."
                 "Trying not to give in to the dark, a few minutes later, you start listening to some footsteps."
                 charDtv "Took you long enough."
                 "Someone gets closer to you and says."
@@ -842,7 +842,7 @@ label t1:
                 charDtv "Stay still." 
                 charDtv "Wouldn’t want you to get injured in any way."
                 play sound "sfx/train.mp3"
-                "After saying this, she tries to grab you, but you dodge, leading her out through the open train doors, resulting in her death."
+                "After saying this, she tries to grab you, but you dodge. This leads her out through the open train doors, resulting in her death."
                 "You hear fast footsteps approaching from the next train carriage so, in a split second, you decide to leave the train."
                 play sound "sfx/train.mp3"
                 "The train was still moving but you gathered courage."
@@ -1001,7 +1001,7 @@ label t2:
             charDck "Look, what do you want?" 
             charDck "Leave! It’s none of your business."
             charMC "C'mon what did they even do?"
-            "He appears to get angry at me and starts yelling."
+            "He appears to get angry at you and starts yelling."
             charDck "These stupid ducks deserve this!" 
             charDck "They killed my grandma!"
             "While the Duck Man’s back is turned towards them, the very wholesome ducks begin gathering right behind him."
@@ -1009,7 +1009,7 @@ label t2:
             charDck "Wha- AAHHHHHHH!"
             play music "music/oof.mp3"
             scene ducks with fade
-            "The Duck Man is pulled into the lake and every last bit of his flesh is devoured by the previous wholesome ducks."
+            "The Duck Man is pulled into the lake and every last bit of his flesh is devoured by the previously wholesome ducks."
             hide duck-man with dissolve
             "You witness as his remains, or what’s left of them anyway, float in the shallow ponds."
             "Suddenly, Ash appears." 
@@ -1111,7 +1111,7 @@ label t2:
                 "You end up picking one that looks like it will land right on his head."
                 "You look at the tree and slowly approach it." 
                 "Only then you realize."
-                "This tree does not seem to move even with super strength!"
+                "This tree does not seem to like people with missing limbs!"
                 "Sad and depressed, you just sit down and wait for the cannibal to get ya..."
                 hide ridley with dissolve
                 play sound "sfx/limb-lost.mp3"
@@ -1312,7 +1312,7 @@ label goodEnd:
     "Yet, even with a chance to run away, you are determined to end it here."
     play sound "sfx/explosion.mp3"
     "You wield your weapon, and then, your friend blows up in a grotesque manner."
-    "You are so shocked by this that you end up unconscious" 
+    "You are so shocked by this that you end up unconscious." 
 
     scene hospital with fade
     play sound "sfx/birds.mp3"
@@ -1350,12 +1350,12 @@ label trueEnd:
     charCan "Hey! I heard what you were saying."
     charMC "When did you get here?"
 
-    "You get up from the bench to start running away but you are grabbed."
+    "You get up from the bench to start running away but he grabs you."
     
     charCan "Listen, I didn’t know I was hurting you all this time."
     play music "music/mystery2.mp3" 
     charCan "I just really wanted to get some of your happiness for myself."
-    "You give up on running away and sit next to your friend."
+    "You give up on running away and sit next to your friend!"
     charMC "Eating me is not the solution to that!" 
     charMC "Have you considered talking to me before?" 
     charMC "About all of this?" 
@@ -1372,7 +1372,7 @@ label trueEnd:
     "You realize that you are being manipulated, but as you still want to be friends, you decide to go with the flow."
     "Your friend helps you get up and you two make your way to downtown."
     scene street6 with fade
-    "You look around at all the people walking around and get hungrier and hungrier, and with the help of your friend, you end up going for a midnight snack."
+    "You look around at all the people walking around and get hungrier and hungrier. With the help of your friend, you end up going for a midnight snack."
 
     "The End!"
 
