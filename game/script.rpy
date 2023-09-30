@@ -575,7 +575,7 @@ label d4:
                 charCan "Nice try."
                 play sound "sfx/eatingsfxwav-14588.mp3"
                 charCan "I ate her in the womb."
-                play music "sfx/violindanger-83476 (1).mp3"
+                play sound "sfx/violindanger-83476 (1).mp3"
                 charMC "..."
                 hide ash with dissolve
                 play sound "sfx/limb-lost.mp3"
