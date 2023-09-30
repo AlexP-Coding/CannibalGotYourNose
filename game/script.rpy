@@ -1,4 +1,4 @@
-# Script for "Oops a Cannibal Got Your Nose!"
+# Script for "Oops, a Cannibal Got Your Nose!"
 
 # Colors
 define mcColor = "#10c05a"
@@ -1276,7 +1276,7 @@ label badEnd:
     hide ridley with dissolve
     hide ash with dissolve
 
-    "Oops a Cannibal Got Your Nose!"
+    "Oops, a Cannibal Got Your Nose!"
     "The End..."
     "You reached the bad end."
     # This ends the bad end.
