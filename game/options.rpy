@@ -79,7 +79,7 @@ We are part of a college game development group, Game Dev Técnico, which can be
     {a=https://pixabay.com/sound-effects//} pixabay{/a}  
 
 
-- Itch.io Page:
+- Itch.io Page Design:
 
     Inês Grasina: {a=https://ines-costa-ahh.itch.io/} Inês' ich.io page{/a}
 
