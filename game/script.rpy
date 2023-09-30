@@ -547,6 +547,7 @@ label d4:
                 charMC "OH MY GOD, is that Annabelle Hektor?!"
                 play sound "sfx/wind.mp3"
                 charCan "Where??"
+                play sound "sfx/whoosh-6316.mp3"
                 "You distracted Ash."
                 hide ash with dissolve
                 play sound "sfx/running.mp3"
