@@ -1179,6 +1179,7 @@ label t3:
             "...Yikes."
             "Oh, well. Qué será, será."
             "You should probably bail while you have the time, though..."
+            play sound "sfx/monster-roar-6985.mp3"
             hide hunter with dissolve
             play sound "sfx/running.mp3"
             "You run away!"
@@ -1202,6 +1203,7 @@ label t3:
             play sound "sfx/trap.mp3"
             "...and slam the bear trap down on the hunter’s foot."
             charHnt "Oh God!"
+            play sound "sfx/man-scream-121085 (2).mp3"
             play music "music/determinator.mp3"
             # *Visuals: A foot torn off the body and stuck in the trap.*
             charHnt "Wait..."
@@ -1210,7 +1212,7 @@ label t3:
             charHnt "Thank you, brave one." 
             charHnt "My very own savior!"
             charMC "...sure."
-            play sound "sfx/wind.mp3"
+            play music "sfx/birds-singing-in-and-leaves-rustling-with-the-wind-14557.mp3"
             charHnt "I’ll be heading off." 
             charHnt "I think the cannibal I heard of might be coming down for a visit."
             charHnt "So kind of you to spare time to save little old me when you could’ve escaped."
