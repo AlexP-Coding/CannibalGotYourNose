@@ -1202,10 +1202,9 @@ label t3:
             scene trap with fade
             charHnt "Bless your heart, young one." 
             charHnt "Truly, you are -"
-            play sound "sfx/trap.mp3"
+            play sound "sfx/man-scream-121085 (2).mp3"
             "...and slam the bear trap down on the hunter’s foot."
             charHnt "Oh God!"
-            play sound "sfx/man-scream-121085 (2).mp3"
             play music "music/determinator.mp3"
             # *Visuals: A foot torn off the body and stuck in the trap.*
             charHnt "Wait..."
