@@ -49,7 +49,7 @@ Game Credits:
 
     David: {a=https://cyberburd.itch.io }Cyberburd's ich.io page{/a} / {a=https://github.com/Cyberburd }Cyberburd's Github Page{/a}
 
-    Inês: Inês link1, Inês link2
+    Inês: {a=https://ines-costa-ahh.itch.io/} Inês' ich.io page{/a}
 
 
 - Programmers: 
@@ -61,7 +61,7 @@ Game Credits:
 
 - Artist:
 
-    Beatriz: Beatriz link1, Beatriz link2
+    Beatriz: {a=https://itch.io/profile/handshimp/}Beatriz's ich.io Page{/a}
 
 
 - Images:  
