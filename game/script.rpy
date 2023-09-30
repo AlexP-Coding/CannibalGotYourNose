@@ -390,6 +390,7 @@ label d3:
     play sound "sfx/long-kiss-41029.mp3"
     charCan "So sexy..."
     charMC "Are you... making out with your calves?"
+    play sound "sfx/ahem-1-47603.mp3"
     charCan "*coughs*" 
     charCan "Anyway, what was I saying?"
     charCan "These days my memory seems to get enthralled by my…beautiful calv-"
@@ -1059,6 +1060,7 @@ label t2:
                 "You end up picking one that looks like it will land right on his head."
                 play music "music/oof.mp3"
                 "You saw the tree to make it fall." 
+                play sound "sfx/bonk-sound-effect-36055 (1).mp3"
                 "Ending the Duck Man’s life as soon as it bonked on him."
                 play sound "sfx/man-scream-121085 (2).mp3"
                 hide duck-man with dissolve
