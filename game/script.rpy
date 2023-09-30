@@ -524,9 +524,11 @@ label d4:
     play sound "sfx/running.mp3"
     show ridley with dissolve
     show ash at left with dissolve
+    play music "sfx/terror-orchestra-6-156155.mp3"
     "After running for your dear life, Ash still manages to stay close to you."
     charMC "Well, maybe If I had all limbs I could outrun you."
     charMC "...sad that it was my favorite limb that was taken off..." 
+    play sound "sfx/munching-food-73994.mp3"
     charMC "At the very least, was it tasty?"
     charCan " v e r y" 
     charCan "t a s t y"
@@ -570,8 +572,9 @@ label d4:
                 charMC "It’s your twin sister!"
                 play sound "sfx/laugh.mp3"
                 charCan "Nice try."
-                play sound "sfx/wind.mp3"
+                play sound "sfx/eatingsfxwav-14588.mp3"
                 charCan "I ate her in the womb."
+                play music "sfx/violindanger-83476 (1).mp3"
                 charMC "..."
                 hide ash with dissolve
                 play sound "sfx/limb-lost.mp3"
@@ -603,7 +606,9 @@ label d4:
                 "It strikes true!"
                 play sound "sfx/bone.mp3"
                 "You no longer have to worry about little baby cannibals running around."
+                play sound "sfx/ough-47202.mp3"
                 charMC "You deserved it!"
+                play sound "sfx/monster-roar-6985.mp3"
 
                 "You should probably worry about getting away, though."
                 hide ash with dissolve
