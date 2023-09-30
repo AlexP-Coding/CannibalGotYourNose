@@ -42,26 +42,29 @@ It's an adventure filled with mystery, comedy, and thrilling twists.
 
 Game Credits:
 
+We are part of a college game development group, Game Dev Técnico, which can be found on
+{a=https://gamedevtecnico.itch.io/}Itch.io{/a}, and on {a=https://www.facebook.com/people/Game-Dev-T%C3%A9cnico/100064447190901/}Facebook{/a} and {a=https://twitter.com/gamedevtecnico?lang=en}Twitter{/a}!    
+
 
 - Writers: 
 
-    Alex: {a=https://github.com/AlexP-Coding}AlexP's Github Page{/a}  / {a=https://alexp-gaming.itch.io/}AlexP's ich.io Page{/a}
+    Alexandra Pato: {a=https://github.com/AlexP-Coding}AlexP's Github Page{/a}  / {a=https://alexp-gaming.itch.io/}AlexP's ich.io Page{/a}
 
-    David: {a=https://cyberburd.itch.io }Cyberburd's ich.io page{/a} / {a=https://github.com/Cyberburd }Cyberburd's Github Page{/a}
+    David Coelho: {a=https://cyberburd.itch.io }Cyberburd's ich.io page{/a} / {a=https://github.com/Cyberburd }Cyberburd's Github Page{/a}
 
-    Inês: {a=https://ines-costa-ahh.itch.io/} Inês' ich.io page{/a}
+    Inês Grasina: {a=https://ines-costa-ahh.itch.io/} Inês' ich.io page{/a}
 
 
 - Programmers: 
 
-    David: {a=https://cyberburd.itch.io }Cyberburd's ich.io page{/a} / {a=https://github.com/Cyberburd }Cyberburd's Github Page{/a}
+    David Coelho: {a=https://cyberburd.itch.io }Cyberburd's ich.io page{/a} / {a=https://github.com/Cyberburd }Cyberburd's Github Page{/a}
     
-    Alex (backup): {a=https://github.com/AlexP-Coding}AlexP's Github Page{/a}  / {a=https://alexp-gaming.itch.io/}AlexP's ich.io Page{/a}
+    Alexandra Pato (backup): {a=https://github.com/AlexP-Coding}AlexP's Github Page{/a}  / {a=https://alexp-gaming.itch.io/}AlexP's ich.io Page{/a}
 
 
 - Artist:
 
-    Beatriz: {a=https://itch.io/profile/handshimp/}Beatriz's ich.io Page{/a}
+    Beatriz Lopes: {a=https://itch.io/profile/handshimp/}Beatriz's ich.io Page{/a}
 
 
 - Images:  
@@ -71,12 +74,17 @@ Game Credits:
     {a=https://www.photofilters.com/}photofilters{/a}   
 
 
-
 - Sound Effects / Music: 
 
-    {a=https://pixabay.com/sound-effects//} pixabay{/a}   
+    {a=https://pixabay.com/sound-effects//} pixabay{/a}  
 
 
+- Itch.io Page:
+
+    Inês Grasina: {a=https://ines-costa-ahh.itch.io/} Inês' ich.io page{/a}
+
+    Beatriz Lopes: {a=https://itch.io/profile/handshimp/}Beatriz's ich.io Page{/a}
+    
 
 Special Thanks:
 
