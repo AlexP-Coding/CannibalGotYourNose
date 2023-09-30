@@ -543,7 +543,7 @@ label d4:
         # Choice 1:
         "Look behind you!":
             # * points *
-            if limbs >= 4:
+            if limbs >= 3:
                 scene street6 with fade
                 charMC "OH MY GOD, is that Annabelle Hektor?!"
                 play sound "sfx/wind.mp3"
@@ -566,7 +566,7 @@ label d4:
                 else:
                     jump d3
                                 
-            elif limbs == 3:
+            elif limbs <= 2:
                 scene street6 with fade
                 "Unfortunately, it is very hard to point at something with no arms."
                 charCan "Oh? "
