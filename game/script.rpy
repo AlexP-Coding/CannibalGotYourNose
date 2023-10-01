@@ -291,7 +291,7 @@ label d2:
     hide ash with dissolve
     play sound "sfx/bump.mp3"
     "Unfortunately, you end up colliding with someone who was carrying a hotdog."
-    show HotDogDude at right with dissolve
+    show hotdogdude at right with dissolve
 
     play music "music/quick.mp3"
     menu:
@@ -336,7 +336,7 @@ label d2:
             "You said, in hopes of tricking him."
             "Your friend falls for it." 
             hide ash with dissolve
-            hide HotDogDude with dissolve
+            hide hotdogdude with dissolve
             "He lets go of your arm, and you hastily head for the nearby hotdog stand." 
             play sound "sfx/falling.mp3"
             scene stand with fade
