@@ -66,8 +66,8 @@ label start:
 
     "While packing stuff for later, you notice your parents standing by the door."
 
-    show mother with dissolve
-    show father at right with dissolve
+    show mom with dissolve
+    show dad at right with dissolve
 
     charDad "Hey, are you going somewhere?" 
     # Character sprite
@@ -79,8 +79,8 @@ label start:
     charDad "Don't forget that we won't be here for the weekend."
     charMC "Yeah. I'll take care of the house, don't worry."
 
-    hide father with fade
-    hide mother with fade
+    hide dad with fade
+    hide mom with fade
 
     play sound "sfx/footsteps.mp3"
     scene house with fade
@@ -291,7 +291,7 @@ label d2:
     hide ash with dissolve
     play sound "sfx/bump.mp3"
     "Unfortunately, you end up colliding with someone who was carrying a hotdog."
-    show Hotdog lover at right with dissolve
+    show HotDogDude at right with dissolve
 
     play music "music/quick.mp3"
     menu:
@@ -336,7 +336,7 @@ label d2:
             "You said, in hopes of tricking him."
             "Your friend falls for it." 
             hide ash with dissolve
-            hide Hotdog lover with dissolve
+            hide HotDogDude with dissolve
             "He lets go of your arm, and you hastily head for the nearby hotdog stand." 
             play sound "sfx/falling.mp3"
             scene stand with fade
