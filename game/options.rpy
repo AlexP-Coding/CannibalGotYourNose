@@ -43,7 +43,7 @@ It's an adventure filled with mystery, comedy, and thrilling twists.
 Game Credits:
 
 We are part of a college game development group, Game Dev Técnico, which can be found on
-{a=https://gamedevtecnico.itch.io/}Itch.io{/a}, and on {a=https://www.facebook.com/people/Game-Dev-T%C3%A9cnico/100064447190901/}Facebook{/a} and {a=https://twitter.com/gamedevtecnico?lang=en}Twitter{/a}!    
+{a=https://gamedevtecnico.itch.io/}Itch.io{/a}, on {a=https://www.facebook.com/people/Game-Dev-T%C3%A9cnico/100064447190901/}Facebook{/a} and {a=https://twitter.com/gamedevtecnico?lang=en}Twitter{/a}!    
 
 
 - Writers: 
@@ -57,14 +57,22 @@ We are part of a college game development group, Game Dev Técnico, which can be
 
 - Programmers: 
 
-    David Coelho: {a=https://cyberburd.itch.io }Cyberburd's ich.io page{/a} / {a=https://github.com/Cyberburd }Cyberburd's Github Page{/a}
-    
     Alexandra Pato (backup): {a=https://github.com/AlexP-Coding}AlexP's Github Page{/a}  / {a=https://alexp-gaming.itch.io/}AlexP's ich.io Page{/a}
 
+    David Coelho: {a=https://cyberburd.itch.io }Cyberburd's ich.io page{/a} / {a=https://github.com/Cyberburd }Cyberburd's Github Page{/a}
+    
 
 - Artist:
 
     Beatriz Lopes: {a=https://itch.io/profile/handshimp/}Beatriz's ich.io Page{/a}
+
+
+- Itch.io Page Design:
+
+    Beatriz Lopes: {a=https://itch.io/profile/handshimp/}Beatriz's ich.io Page{/a}
+
+    Inês Grasina: {a=https://ines-costa-ahh.itch.io/} Inês' ich.io page{/a}
+
 
 
 - Images:  
@@ -79,18 +87,13 @@ We are part of a college game development group, Game Dev Técnico, which can be
     {a=https://pixabay.com/sound-effects//} pixabay{/a}  
 
 
-- Itch.io Page Design:
-
-    Inês Grasina: {a=https://ines-costa-ahh.itch.io/} Inês' ich.io page{/a}
-
-    Beatriz Lopes: {a=https://itch.io/profile/handshimp/}Beatriz's ich.io Page{/a}
-    
 
 Special Thanks:
 
 We would like to extend our gratitude to all the participants of the jam for their hard work and dedication in bringing this game to life. 
 
 Additionally, a big thank you to our supporters and players for joining us on this spooky journey.
+
 
 We hope you enjoyed playing. 
 
