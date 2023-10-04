@@ -37,11 +37,15 @@ init python:
 init python:
     limbs = 5  # Initialize with 5 limbs (head, arm1, arm2, leg1, leg2)
 #-----------------------------------------------------------------------------------
+# number of sacrifices
 init python:
     sacrifices = 0 
 #-----------------------------------------------------------------------------------
 
 label start:
+
+    stop music
+
     # Introduction
 
     # play a song / sound effect
@@ -257,7 +261,7 @@ label d1:
             jump t3
 
         # Choice 2:
-        "Wrestle free from their grasp.":
+        "Wrestle free from his grasp.":
             "But soon realize that he is stronger than you."
             play sound "sfx/limb-lost.mp3"
             scene limb-lost with fade
@@ -345,10 +349,14 @@ label d2:
             show ash with dissolve
             play sound "sfx/rolling.mp3"
             charCan "All these hotdogs are not as good as your flesh!"
+            hide ash with dissolve
             "A few minutes later, you jump out of the hotdog stand."
             play sound "sfx/falling-ground.mp3"
             "As you safely land on top of a shrub of plants, you see your friend still chasing the hotdog stand."
-            hide ash with dissolve
+            "You find a saw lying on the floor."
+            "You decide to pick it up."
+            python:
+                saw = True
             "You are free to run away."
             python:
                 # increase the number of scenarios survived by 1
@@ -464,8 +472,8 @@ label d3:
                 
                 "[sacrifices_text]"
 
-                # Check if the character has sacrificed more or equal to 4 people to go to true end
-                if sacrifices >= 4:
+                # Check if the character has sacrificed more or equal to 3 people to go to true end
+                if sacrifices >= 3:
                     jump trueEnd
                 else:
                     jump t1
@@ -508,7 +516,7 @@ label d3:
             "[survived_text]"
 
             # Check if the character has survived more or equal to 3 scenarios, go to good end
-            if weapon == True and scenariosSurvived >= 3 and limbs != 0 and sacrifices <= 3:
+            if weapon == True and scenariosSurvived >= 3 and limbs != 0 and sacrifices <= 2:
                 jump goodEnd
             else:
                 jump t1
@@ -561,7 +569,7 @@ label d4:
 
                 "[survived_text]"
                 # Check if the character has survived more or equal to 3 scenarios, go to good end
-                if weapon == True and scenariosSurvived >= 3 and limbs != 0 and sacrifices <= 3:
+                if weapon == True and scenariosSurvived >= 3 and limbs != 0 and sacrifices <= 2:
                     jump goodEnd
                 else:
                     jump d3
@@ -625,7 +633,7 @@ label d4:
                 "[survived_text]"
                 
                 # Check if the character has survived more or equal to 3 scenarios, go to good end
-                if weapon == True and scenariosSurvived >= 3 and limbs != 0 and sacrifices <= 3:
+                if weapon == True and scenariosSurvived >= 3 and limbs != 0 and sacrifices <= 2:
                     jump goodEnd
                 else:
                     jump d3
@@ -716,8 +724,8 @@ label t1:
                 
                 "[sacrifices_text]"
 
-                # Check if the character has sacrificed more or equal to 4 people to go to true end
-                if sacrifices >= 4:
+                # Check if the character has sacrificed more or equal to 3 people to go to true end
+                if sacrifices >= 3:
                     jump trueEnd
                 else:
                     jump noEnd
@@ -861,7 +869,8 @@ label t1:
                 show ridley at left with dissolve
                 scene train2 with fade
                 "Making your way back into the train station, you grab a body part to restore yourself and some items."
-                "You get a pistol."
+                "You find a pistol."
+                "You decide to pick it up."
                 python:
                     weapon = True
 
@@ -875,7 +884,7 @@ label t1:
                 "[remaining_limbs_text]"
                 "You somehow ran away."
                 # Check if the character has survived more or equal to 3 scenarios, go to good end
-                if weapon == True and scenariosSurvived >= 3 and limbs != 0 and sacrifices <= 3:
+                if weapon == True and scenariosSurvived >= 3 and limbs != 0 and sacrifices <= 2:
                     jump goodEnd
                 else:
                     jump noEnd
@@ -1045,7 +1054,7 @@ label t2:
 
         # Choice d:
         "Drop a tree on him ":
-            if limbs == 5 and saw == true:
+            if limbs == 5 and saw == True:
                 charMC "Oh, I was lost in the lyrics of a song." 
                 charMC "A song that I was singing in my head."
                 charDck "Are you serious? Just leave!"
@@ -1056,15 +1065,15 @@ label t2:
                 play sound "sfx/footsteps.mp3"
                 scene tree with fade
                 "You pretend to leave the vicinity, but manage to hide behind a large tree."
-                "You look around searching for the perfect tree to bonk on the Duck Man’s head."
+                "Then, you look around searching for the perfect tree to bonk on the Duck Man’s head."
                 "You end up picking one that looks like it will land right on his head."
                 play music "music/oof.mp3"
-                "You saw the tree to make it fall." 
+                "You use the saw to cut the tree and make it fall." 
                 play sound "sfx/bonk-sound-effect-36055 (1).mp3"
                 "Ending the Duck Man’s life as soon as it bonked on him."
                 play sound "sfx/man-scream-121085 (2).mp3"
                 hide duck-man with dissolve
-                "The Duck Man ends up getting a bit.. squished." 
+                "The Duck Man ends up getting a bit... squished." 
                 "You just hope the cannibal doesn't mind it that much."
                 "Fast footsteps get closer to your vacinity, so you decide to run away."
                 python:
@@ -1075,7 +1084,7 @@ label t2:
 
                 "[sacrifices_text]"
 
-            if limbs == 5 and saw == false:
+            if limbs == 5 and saw == False:
                 charMC "Oh, I was lost in the lyrics of a song." 
                 charMC "A song that I was singing in my head."
                 charDck "Are you serious? Just leave!"
@@ -1278,12 +1287,35 @@ label badEnd:
     "Oops, a Cannibal Got Your Nose!"
     "The End..."
     "You reached the bad end."
+
+    "Results Screen:"
+
+    python:
+        remaining_limbs_text = "You had {} limb(s) remaining.".format(limbs)
+
+    "[remaining_limbs_text]"
+
+    python:
+        survived_text = "You survived {} scenario(s).".format(scenariosSurvived)
+
+    "[survived_text]"
+
+    python:
+        sacrifices_text = "You sacrificed {} person/people.".format(sacrifices)
+    
+    "[sacrifices_text]"
+
+    if weapon:  
+        "You found a weapon."
+    else:
+        "You didn't find a weapon."
+
     # This ends the bad end.
     return
 
 label goodEnd:
     # Canni-boom! ending (cannibal gets so full he ends up exploding)
-    # Ridley has to have a weapon (pistol/saw) and has to survive 3 or more scenarios.
+    # Ridley has to have a weapon and has to survive 3 or more scenarios.
 
     scene street8 with fade
     play sound "sfx/running.mp3"
@@ -1340,6 +1372,28 @@ label goodEnd:
 
     "The End."
     "You reached the good end."
+
+    "Results Screen:"
+
+    python:
+        remaining_limbs_text = "You had {} limb(s) remaining.".format(limbs)
+
+    "[remaining_limbs_text]"
+
+    python:
+        survived_text = "You survived {} scenario(s).".format(scenariosSurvived)
+
+    "[survived_text]"
+
+    python:
+        sacrifices_text = "You sacrificed {} person/people.".format(sacrifices)
+    
+    "[sacrifices_text]"
+
+    if weapon: 
+        "You found a weapon."
+    else:
+        "You didn't find a weapon."
     # This ends the good end.
     return
 
@@ -1393,6 +1447,29 @@ label trueEnd:
     "The End!"
 
     "You reached the true end."
+
+    "Results Screen:"
+
+    python:
+        remaining_limbs_text = "You had {} limb(s) remaining.".format(limbs)
+
+    "[remaining_limbs_text]"
+
+    python:
+        survived_text = "You survived {} scenario(s).".format(scenariosSurvived)
+
+    "[survived_text]"
+
+    python:
+        sacrifices_text = "You sacrificed {} person/people.".format(sacrifices)
+    
+    "[sacrifices_text]"
+
+    if weapon:  
+        "You found a weapon."
+    else:
+        "You didn't find a weapon."
+
     # This ends the true end.
     return
 
@@ -1404,4 +1481,28 @@ label noEnd:
     "Congrats!"
     "You got nowhere fast..."
     "Good luck next time!"
-return
+
+    "Results Screen:"
+
+    python:
+        remaining_limbs_text = "You had {} limb(s) remaining.".format(limbs)
+
+    "[remaining_limbs_text]"
+
+    python:
+        survived_text = "You survived {} scenario(s).".format(scenariosSurvived)
+
+    "[survived_text]"
+
+    python:
+        sacrifices_text = "You sacrificed {} person/people.".format(sacrifices)
+    
+    "[sacrifices_text]"
+
+    if weapon:  
+        "You found a weapon."
+    else:
+        "You didn't find a weapon."
+    
+    # This ends the no end.
+    return
