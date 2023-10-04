@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = "Version  1.1"
 
 
 
@@ -31,6 +31,7 @@ define config.version = "1.0"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+
 Hi!
 
 This game was created as part of the {a=https://itch.io/jam/spooktober-2023 }"Spooktober 5th Annual Visual Novel Jam"{/a}
@@ -48,7 +49,7 @@ We are part of a college game development group, Game Dev Técnico, which can be
 
 - Writers: 
 
-    Alexandra Pato: {a=https://github.com/AlexP-Coding}AlexP's Github Page{/a}  / {a=https://alexp-gaming.itch.io/}AlexP's ich.io Page{/a}
+    Alexandra Pato (backup): {a=https://alexp-gaming.itch.io/}AlexP's ich.io Page{/a} / {a=https://github.com/AlexP-Coding}AlexP's Github Page{/a} 
 
     David Coelho: {a=https://cyberburd.itch.io }Cyberburd's ich.io page{/a} / {a=https://github.com/Cyberburd }Cyberburd's Github Page{/a}
 
@@ -57,7 +58,7 @@ We are part of a college game development group, Game Dev Técnico, which can be
 
 - Programmers: 
 
-    Alexandra Pato (backup): {a=https://github.com/AlexP-Coding}AlexP's Github Page{/a}  / {a=https://alexp-gaming.itch.io/}AlexP's ich.io Page{/a}
+    Alexandra Pato (backup): {a=https://alexp-gaming.itch.io/}AlexP's ich.io Page{/a} / {a=https://github.com/AlexP-Coding}AlexP's Github Page{/a} 
 
     David Coelho: {a=https://cyberburd.itch.io }Cyberburd's ich.io page{/a} / {a=https://github.com/Cyberburd }Cyberburd's Github Page{/a}
     
@@ -70,6 +71,8 @@ We are part of a college game development group, Game Dev Técnico, which can be
 - Itch.io Page Design:
 
     Beatriz Lopes: {a=https://itch.io/profile/handshimp/}Beatriz's ich.io Page{/a}
+
+    David Coelho: {a=https://cyberburd.itch.io } Cyberburd's ich.io page{/a} / {a=https://github.com/Cyberburd }Cyberburd's Github Page{/a}
 
     Inês Grasina: {a=https://ines-costa-ahh.itch.io/} Inês' ich.io page{/a}
 
@@ -86,6 +89,12 @@ We are part of a college game development group, Game Dev Técnico, which can be
 
     {a=https://pixabay.com/sound-effects//} pixabay{/a}  
 
+
+- Fonts:
+
+    {a=https://www.fontsquirrel.com/}fontsquirrel{/a}
+
+    {a=https://www.dafont.com/}dafont{/a}
 
 
 Special Thanks:
