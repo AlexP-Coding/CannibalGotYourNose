@@ -1,4 +1,4 @@
-﻿################################################################################
+################################################################################
 ## Initialization
 ################################################################################
 
@@ -23,7 +23,6 @@ style hyperlink_text:
 
 style gui_text:
     properties gui.text_properties("interface")
-
 
 style button:
     properties gui.button_properties("button")
@@ -131,12 +130,13 @@ style namebox_label is say_label
 
 
 style window:
-    xalign 0.5
+    xalign 0.1
     xfill True
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    background Image("gui/textbox.png", xalign=0.5, yalign=0)
+
 
 style namebox:
     xpos gui.name_xpos
@@ -219,8 +219,8 @@ style choice_button_text is button_text
 
 style choice_vbox:
     xalign 0.5
-    ypos 405
-    yanchor 0.5
+    ypos 705
+    yanchor 0.9
 
     spacing gui.choice_spacing
 
@@ -235,7 +235,6 @@ style choice_button_text is default:
 ##
 ## The quick menu is displayed in-game to provide easy access to the out-of-game
 ## menus.
-
 screen quick_menu():
 
     ## Ensure this appears on top of other screens.
@@ -243,21 +242,37 @@ screen quick_menu():
 
     if quick_menu:
 
-        hbox:
-            style_prefix "quick"
+        frame:
+            style "quick_menu_frame"
 
-            xalign 0.5
-            yalign 1.0
+            ## This puts the quick menu buttons inside the frame.
+            hbox:
+                style_prefix "quick"
+                xalign -0.023
+                yalign 0
+                spacing 73 
 
-            textbutton _("Back") action Rollback()
-            textbutton _("History") action ShowMenu('history')
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Save") action ShowMenu('save')
-            textbutton _("Q.Save") action QuickSave()
-            textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+                # Add your quick menu buttons here.
+                textbutton _("Back") action Rollback()
+                textbutton _("History") action ShowMenu('history')
+                textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
+                textbutton _("Auto") action Preference("auto-forward", "toggle")
+                textbutton _("Save") action ShowMenu('save')
+                textbutton _("Q.Save") action QuickSave()
+                textbutton _("Q.Load") action QuickLoad()
+                textbutton _("Prefs") action ShowMenu('preferences')
 
+style quick_menu_frame is frame:
+    xpos 320
+    ypos 1030
+    xanchor 0
+    yanchor 0
+
+    ## Set the size of the frame to match your quick-menu image dimensions.
+    xsize 500  # Adjust this according to your image width.
+    ysize 100  # Adjust this according to your image height.
+
+    background Image("gui/quick-menu.png")  # Set your image file path here.
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
 ## the player has not explicitly hidden the interface.
@@ -266,7 +281,7 @@ init python:
 
 default quick_menu = True
 
-style quick_button is default
+
 style quick_button_text is button_text
 
 style quick_button:
@@ -291,7 +306,7 @@ screen navigation():
         style_prefix "navigation"
 
         xpos gui.navigation_xpos
-        yalign 0.5
+        yalign 0.7
 
         spacing gui.navigation_spacing
 
