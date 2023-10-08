@@ -827,8 +827,8 @@ label t1:
                 "They both get a body part of yours."
 
                 python:
-                    # Reduce the limbs by 2
-                    limbs -= 2
+                    # Reduce the limbs by 1
+                    limbs -= 1
                 
                 python:
                     remaining_limbs_text = "You have {} limb(s) remaining.".format(limbs)
